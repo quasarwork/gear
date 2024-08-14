@@ -1,0 +1,72 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    allow:
+      - dependency-type: "direct"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "⬆️ (dependabot)"
+    assignees:
+      - "aurelienbobenrieth"
+    reviewers:
+      - "aurelienbobenrieth"
+    rebase-strategy: "auto"
+    versioning-strategy: "increase"
+    groups:
+      react:
+        patterns:
+          - "react*"
+          - "@types/react*"
+      shopify:
+        patterns:
+          - "@shopify*"
+          - "shopify*"
+      effect:
+        patterns:
+          - "effect"
+          - "@effect*"
+      eslint:
+        patterns:
+          - "eslint*"
+          - "@typescript-eslint*"
+      testing:
+        patterns:
+          - "vitest"
+          - "@vitest*"
+      typescript:
+        patterns:
+          - "typescript"
+          - "@types/*"
+      vite:
+        patterns:
+          - "vite*"
+      gadget:
+        patterns:
+          - "@gadget*"
+          - "@gadgetinc*"
+      formatting:
+        patterns:
+          - "prettier*"
+      production-dependencies:
+        dependency-type: "production"
+        exclude-patterns:
+          - "react*"
+          - "@shopify*"
+          - "effect"
+          - "@effect*"
+          - "@gadget*"
+          - "@gadgetinc*"
+      dev-dependencies:
+        dependency-type: "development"
+        exclude-patterns:
+          - "eslint*"
+          - "@typescript-eslint*"
+          - "vitest"
+          - "@vitest*"
+          - "typescript"
+          - "@types/*"
+          - "vite*"
+          - "prettier*"
+    open-pull-requests-limit: 10
