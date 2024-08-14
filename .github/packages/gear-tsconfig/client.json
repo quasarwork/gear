@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Gear (client)",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "paths": {
+      "#client/*": [
+        "./*"
+      ]
+    }
+  },
+  "exclude": [
+    "**/api/*",
+    "**/extensions/*"
+  ]
+}

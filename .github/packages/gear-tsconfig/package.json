@@ -1,0 +1,18 @@
+{
+  "name": "@quasarwork/gear-tsconfig",
+  "description": "Opinionated TypeScript configuration for Quasar.work's Gear projects",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Aurélien BOBENRIETH",
+    "url": "https://quasar.work"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quasarwork/gear.git",
+    "directory": "packages/gear-tsconfig"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

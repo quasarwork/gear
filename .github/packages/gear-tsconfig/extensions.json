@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Gear (extensions)",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "paths": {
+      "#extensions/*": [
+        "./*"
+      ],
+      ".gadget/*": ["../.gadget/*"]
+    }
+  },
+  "exclude": [
+    "**/api/*",
+    "**/web/*"
+  ]
+}
