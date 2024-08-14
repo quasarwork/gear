@@ -1,0 +1,17 @@
+{
+  "name": "quasarwork-gear-",
+  "version": "0.0.1",
+  "description": "Gear is a toolbox helping you to build Shopify apps with the Gadget platform.",
+  "license": "MIT",
+  "scripts": {
+    "vite:build": "NODE_ENV=production vite build"
+  },
+  "author": {
+    "name": "Aurélien BOBENRIETH",
+    "url": "https://quasar.work"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quasarwork/gear"
+  },
+}
