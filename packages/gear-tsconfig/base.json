@@ -19,15 +19,13 @@
     "forceConsistentCasingInFileNames": true,
     "exactOptionalPropertyTypes": true,
     "noEmit": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": true,
     "baseUrl": ".",
     "rootDir": "./",
     "paths": {
-      "#server/*": [
-        "./api/*"
-      ]
+      "#server/*": ["./api/*"]
     }
   },
   "exclude": [
@@ -40,6 +38,10 @@
   ],
   "include": [
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.cjs"
   ]
 }
