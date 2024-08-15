@@ -1,7 +1,7 @@
 {
   "name": "quasarwork-gear",
   "version": "0.0.1",
-  "description": "Gear is a toolbox helping you to build Shopify apps with the Gadget platform.",
+  "description": "Gear project monorepo.",
   "license": "MIT",
   "author": {
     "name": "Aurélien BOBENRIETH",

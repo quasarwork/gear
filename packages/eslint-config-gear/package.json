@@ -18,17 +18,19 @@
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
+  "type": "module",
   "exports": {
-    "/": "./base.json",
-    "/base": "./base.mjs",
-    "/client": "./client.mjs",
-    "/extensions": "./extensions.mjs"
+    ".": "./base.mjs",
+    "./base": "./base.mjs",
+    "./client": "./client.mjs",
+    "./extensions": "./extensions.mjs"
   },
   "scripts": {
     "format": "prettier --check .",
     "format:write": "prettier --write .",
     "tidy": "yarn format:write"
   },
+  "prettier": "@quasarwork/gear-prettier-config",
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@quasarwork/gear-prettier-config": "*",

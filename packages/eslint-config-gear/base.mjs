@@ -32,7 +32,6 @@ const config = tseslint.config(
       "**/*.jsx",
       "**/*.mjs",
       "**/*.cjs",
-      "**/*.json",
     ],
   },
   {

@@ -22,26 +22,26 @@
     "types": ["node"],
     "allowJs": true,
     "checkJs": true,
-    "baseUrl": ".",
-    "rootDir": "./",
+    "baseUrl": "${configDir}",
+    "rootDir": "${configDir}",
     "paths": {
-      "#server/*": ["./api/*"]
+      "#server/*": ["${configDir}/api/*"]
     }
   },
   "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    ".gadget",
-    "./web/*",
-    "./extensions/*"
+    "${configDir}/**/node_modules",
+    "${configDir}/**/dist",
+    "${configDir}/**/build",
+    "*.gadget",
+    "${configDir}/web/*",
+    "${configDir}/extensions/*"
   ],
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.mjs",
-    "**/*.cjs"
+    "${configDir}/**/*.ts",
+    "${configDir}/**/*.tsx",
+    "${configDir}/**/*.js",
+    "${configDir}/**/*.jsx",
+    "${configDir}/**/*.mjs",
+    "${configDir}/**/*.cjs"
   ]
 }

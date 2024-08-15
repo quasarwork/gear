@@ -10,9 +10,9 @@
     "lib": ["es2015", "dom"],
     "types": ["@shopify/app-bridge-types", "vite/client"],
     "paths": {
-      "#extensions/*": ["./*"],
-      ".gadget/*": ["../.gadget/*"]
+      "#extensions/*": ["${configDir}/*"],
+      ".gadget/*": ["${configDir}/../.gadget/*"]
     }
   },
-  "exclude": ["**/api/*", "**/web/*"]
+  "exclude": ["${configDir}/../api/*", "${configDir}/../web/*"]
 }

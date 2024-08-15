@@ -10,8 +10,8 @@
     "lib": ["es2020", "dom"],
     "types": ["@shopify/app-bridge-types", "vite/client"],
     "paths": {
-      "#client/*": ["./*"]
+      "#client/*": ["${configDir}/*"]
     }
   },
-  "exclude": ["**/api/*", "**/extensions/*"]
+  "exclude": ["${configDir}/../api/*", "${configDir}/../extensions/*"]
 }

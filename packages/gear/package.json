@@ -1,35 +1,39 @@
 {
-  "name": "@quasarwork/gear-tsconfig",
+  "name": "@quasarwork/gear",
   "version": "0.0.1",
-  "description": "Opinionated TypeScript configuration for Quasar.work's Gear projects",
+  "description": "Gear is a toolbox helping you to build Shopify apps with the Gadget platform.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "quasarwork",
+    "gear"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/quasarwork/gear.git",
-    "directory": "packages/gear-tsconfig"
+    "directory": "packages/gear"
   },
   "license": "MIT",
   "author": {
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
-  "exports": {
-    ".": "./base.json",
-    "./base": "./base.json",
-    "./client": "./client.json",
-    "./extensions": "./extensions.json"
-  },
-  "main": "./base.json",
   "scripts": {
     "format": "prettier --check .",
     "format:write": "prettier --write .",
-    "tidy": "yarn format:write"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "tidy": "yarn format:write && yarn lint:fix"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "devDependencies": {
+    "@quasarwork/eslint-config-gear": "*",
     "@quasarwork/gear-prettier-config": "*",
-    "@shopify/app-bridge-types": "^0.0.14",
+    "@quasarwork/gear-tsconfig": "*",
+    "eslint": "^9.9.0",
     "prettier": "^3.3.3",
-    "vite": "^5.4.1"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.1.0"
   },
   "publishConfig": {
     "access": "public"
