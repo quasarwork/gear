@@ -20,10 +20,9 @@
   },
   "type": "module",
   "exports": {
-    ".": "./base.mjs",
-    "./base": "./base.mjs",
-    "./client": "./client.mjs",
-    "./extensions": "./extensions.mjs"
+    "./eslint.config.base.mjs": "./eslint.config.base.mjs",
+    "./eslint.config.client.mjs": "./eslint.config.client.mjs",
+    "./eslint.config.extensions.mjs": "./eslint.config.extensions.mjs"
   },
   "scripts": {
     "format": "prettier --check .",
@@ -34,6 +33,7 @@
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@quasarwork/gear-prettier-config": "*",
+    "@types/eslint__js": "^8.42.3",
     "eslint": "^9.9.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",

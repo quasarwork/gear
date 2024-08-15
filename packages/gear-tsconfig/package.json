@@ -2,6 +2,12 @@
   "name": "@quasarwork/gear-tsconfig",
   "version": "0.0.1",
   "description": "Opinionated TypeScript configuration for Quasar.work's Gear projects",
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "quasarwork",
+    "gear"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/quasarwork/gear.git",
@@ -13,12 +19,11 @@
     "url": "https://quasar.work"
   },
   "exports": {
-    ".": "./base.json",
-    "./base": "./base.json",
-    "./client": "./client.json",
-    "./extensions": "./extensions.json"
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
+    "./tsconfig.extensions.json": "./tsconfig.extensions.json"
   },
-  "main": "./base.json",
+  "main": "tsconfig.base.json",
   "scripts": {
     "format": "prettier --check .",
     "format:write": "prettier --write .",
@@ -28,6 +33,7 @@
   "devDependencies": {
     "@quasarwork/gear-prettier-config": "*",
     "@shopify/app-bridge-types": "^0.0.14",
+    "@types/node": "^22.3.0",
     "prettier": "^3.3.3",
     "vite": "^5.4.1"
   },

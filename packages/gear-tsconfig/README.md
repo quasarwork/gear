@@ -18,13 +18,13 @@ To enable a configuration, extend your `tsconfig.json` file by adding the `exten
 
 ```json
 {
-  "extends": "@quasarwork/gear-tsconfig/base"
+  "extends": "@quasarwork/gear-tsconfig/tsconfig.base.json"
 }
 ```
 
 ## Available configurations
 
-### `base.json`
+### `tsconfig.base.json`
 
 This configuration is the base configuration for all [Quasar.work]'s [Gear ⚙️] projects.
 
@@ -38,7 +38,7 @@ The used `module` and `moduleResolution` are based on the ones that can be found
 
 ⚠️ The `exactOptionalPropertyTypes` property is mandatory for [@effect/schema] to work properly. See [https://github.com/Effect-TS/effect/tree/main/packages/schema#requirements](https://github.com/Effect-TS/effect/tree/main/packages/schema#requirements).
 
-### `client.json`
+### `tsconfig.client.json`
 
 This configuration extends the `base.json` configuration and replaces the `module` and `moduleResolution` as well as the `target` properties. It also adds some features related to a client side usage.
 
@@ -48,7 +48,7 @@ In a Gear Shopify app, this configuration will be used in the `tsconfig.json` fi
 
 The used `module`, `moduleResolution` are based on the ones that can be found when kicking off a new [Gadget] app under the `.gadget/client/tsconfig.json` file.
 
-### `extensions.json`
+### `tsconfig.extensions.json`
 
 This configuration extends the `base.json` configuration and replaces the `module` and `moduleResolution` as well as the `target` properties. It also adds some features related to a client side usage.
 

@@ -7,16 +7,17 @@
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/quasarwork/gear"
   },
   "devDependencies": {
+    "@quasarwork/gear-prettier-config": "*",
+    "@quasarwork/gear-tsconfig": "*",
     "eslint": "^9.9.0",
     "turbo": "^2.0.14",
-    "@quasarwork/eslint-config-gear": "*",
-    "@quasarwork/gear-prettier-config": "*",
-    "@quasarwork/gear-tsconfig": "*"
+    "typescript": "^5.5.4"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -31,6 +32,9 @@
     "tidy": "turbo run tidy"
   },
   "private": true,
-  "workspaces": ["packages/*"],
-  "packageManager": "yarn@1.22.22"
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@1.22.22",
+  "dependencies": {}
 }

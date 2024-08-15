@@ -2,6 +2,11 @@
   "name": "@quasarwork/gear-prettier-config",
   "version": "0.0.1",
   "description": "Opinionated Prettier configuration for Quasar.work's Gear projects",
+  "keywords": [
+    "prettier",
+    "quasarwork",
+    "gear"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/quasarwork/gear.git",
@@ -13,11 +18,11 @@
     "url": "https://quasar.work"
   },
   "exports": {
-    ".": "./index.mjs"
+    ".": "./prettier.config.mjs"
   },
   "scripts": {
-    "format": "prettier --check --config ./index.mjs .",
-    "format:write": "prettier --write --config ./index.mjs .",
+    "format": "prettier --check --config prettier.config.mjs .",
+    "format:write": "prettier --write --config prettier.config.mjs .",
     "tidy": "yarn format:write"
   },
   "devDependencies": {

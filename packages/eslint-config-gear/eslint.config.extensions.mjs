@@ -4,9 +4,12 @@ import eslintPluginReactRefresh from "eslint-plugin-react-refresh";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-import eslintConfigGear from "./base.mjs";
+import eslintConfigGear from "./eslint.config.base.mjs";
 
 const config = tseslint.config(
+  {
+    name: "Gear (extensions)",
+  },
   ...eslintConfigGear,
   {
     languageOptions: {
@@ -44,7 +47,7 @@ const config = tseslint.config(
       "**/.gadget/*",
       "*.gadget.ts",
       "**/api/*",
-      "**/extensions/*",
+      "**/web/*",
     ],
   },
 );

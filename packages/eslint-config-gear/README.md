@@ -17,10 +17,10 @@ yarn add -D eslint typescript typescript-eslint @quasarwork/eslint-config-gear
 Add the following to your `estlint.config.mjs` file:
 
 ```js
-import eslintConfigGear from "@quasarwork/eslint-config-gear/base.mjs";
+import eslintConfigGearBase from "@quasarwork/eslint-config-gear/eslint.config.base.mjs";
 import tseslint from "typescript-eslint";
 
-const config = tseslint.config(...eslintConfigGear);
+const config = tseslint.config(...eslintConfigGearBase);
 
 export default config;
 ```

@@ -3,7 +3,10 @@ import eslintPluginPrettier from "eslint-plugin-prettier";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
-const config = tseslint.config(
+export default tseslint.config(
+  {
+    name: "Gear (base)",
+  },
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
@@ -68,5 +71,3 @@ const config = tseslint.config(
     },
   },
 );
-
-export default config;

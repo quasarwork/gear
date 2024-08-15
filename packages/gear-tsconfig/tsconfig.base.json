@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Gear (base)",
   "compilerOptions": {
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "target": "esnext",
     "strict": true,
     "esModuleInterop": true,
@@ -25,6 +25,7 @@
     "baseUrl": "${configDir}",
     "rootDir": "${configDir}",
     "paths": {
+      "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
       "#server/*": ["${configDir}/api/*"]
     }
   },
@@ -42,6 +43,7 @@
     "${configDir}/**/*.js",
     "${configDir}/**/*.jsx",
     "${configDir}/**/*.mjs",
-    "${configDir}/**/*.cjs"
+    "${configDir}/**/*.cjs",
+    "vite.config.base.ts"
   ]
 }
