@@ -3,7 +3,7 @@ import { Schema, brand, filter } from "@effect/schema/Schema";
 import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema";
 
 /**
- * Implements fast shallow verification of hostnames.
+ * Implements fast shallow verification of phone numbers.
  * This does not perform a phone number real-time validation but instead check that the structure is valid.
  *
  * If you need stricter validation, consider using an external library.
