@@ -1,8 +1,7 @@
-import tsconfigPaths from "vite-tsconfig-paths";
 import { UserConfig } from "vitest/config";
 
 export const viteConfigBase: UserConfig = {
-  plugins: [tsconfigPaths()],
+  plugins: [],
   clearScreen: false,
   test: {
     testTimeout: 15 * 1000,

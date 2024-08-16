@@ -19,7 +19,6 @@
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
-  "type": "module",
   "imports": {
     "#progLangExtensions/*": "./progLangExtensions/*.ts"
   },
@@ -29,13 +28,14 @@
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "tidy": "yarn check-types && yarn lint:fix && yarn format:write"
+    "tidy": "yarn check-types && yarn lint:fix && yarn format:write",
+    "/* Testings */": "",
+    "test:ut": "vitest .test.ts"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "dependencies": {
     "effect": "^3.6.4",
-    "vite": "^5.4.1",
-    "vite-tsconfig-paths": "^5.0.1"
+    "vite": "^5.4.1"
   },
   "devDependencies": {
     "@effect/vitest": "^0.8.5",
