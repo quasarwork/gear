@@ -86,7 +86,6 @@ describe("hostname schema", () => {
       const someInvalidHostname = "https://www.google.com";
 
       const result = yield* Effect.flip(decode(HostName)(someInvalidHostname));
-      console.log(result);
 
       expect(result).toBeInstanceOf(Error);
     }),
