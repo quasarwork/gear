@@ -1,5 +1,7 @@
-import { viteConfigBase } from "vite.config.base";
 import { type UserConfigExport, mergeConfig } from "vitest/config";
+
+// noinspection ES6PreferShortImport
+import { viteConfigBase } from "./vite.config.base";
 
 const config: UserConfigExport = {};
 
