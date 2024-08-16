@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Gear is a toolbox helping you to build Shopify apps with the Gadget platform.",
   "keywords": [
-    "eslint",
-    "eslintconfig",
+    "gadget",
+    "effect",
+    "shopify",
     "quasarwork",
     "gear"
   ],
@@ -18,22 +19,34 @@
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
+  "type": "module",
+  "imports": {
+    "#progLangExtensions/*": "./progLangExtensions/*.ts"
+  },
   "scripts": {
+    "check-types": "tsc --noEmit",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "tidy": "yarn format:write && yarn lint:fix"
+    "tidy": "yarn check-types && yarn lint:fix && yarn format:write"
   },
   "prettier": "@quasarwork/gear-prettier-config",
+  "dependencies": {
+    "effect": "^3.6.4",
+    "vite": "^5.4.1",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
   "devDependencies": {
+    "@effect/vitest": "^0.8.5",
     "@quasarwork/eslint-config-gear": "*",
     "@quasarwork/gear-prettier-config": "*",
     "@quasarwork/gear-tsconfig": "*",
     "eslint": "^9.9.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.1.0"
+    "typescript-eslint": "^8.1.0",
+    "vitest": "^2.0.5"
   },
   "publishConfig": {
     "access": "public"

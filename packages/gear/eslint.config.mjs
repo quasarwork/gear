@@ -1,6 +1,6 @@
-import eslintConfigGear from "@quasarwork/eslint-config-gear/base";
+import eslintConfigGearBase from "@quasarwork/eslint-config-gear/eslint.config.base.mjs";
 import tseslint from "typescript-eslint";
 
-const config = tseslint.config(...eslintConfigGear);
+const config = tseslint.config(...eslintConfigGearBase);
 
 export default config;
