@@ -24,6 +24,8 @@
     "checkJs": true,
     "baseUrl": "${configDir}",
     "rootDir": "${configDir}",
+    "incremental": true,
+    "resolveJsonModule": true,
     "paths": {
       "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
       "#server/*": ["${configDir}/api/*"]
@@ -43,7 +45,6 @@
     "${configDir}/**/*.js",
     "${configDir}/**/*.jsx",
     "${configDir}/**/*.mjs",
-    "${configDir}/**/*.cjs",
-    "vite.config.base.ts"
+    "${configDir}/**/*.cjs"
   ]
 }
