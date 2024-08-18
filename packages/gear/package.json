@@ -36,6 +36,7 @@
     "@effect/schema": "^0.71.0",
     "@effect/vitest": "^0.8.5",
     "effect": "^3.6.4",
+    "pino": "^9.3.2",
     "vite": "^5.4.1"
   },
   "devDependencies": {
