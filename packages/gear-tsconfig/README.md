@@ -9,7 +9,7 @@ Learn more about [TypeScript configurations](https://www.typescriptlang.org/docs
 Run the following command to install this package:
 
 ```bash
-yarn add @quasarwork/gear-tsconfig
+yarn add -D @quasarwork/gear-tsconfig
 ```
 
 ## Usage
