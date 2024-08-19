@@ -29,8 +29,8 @@
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test:ut": "vitest .test.ts",
     "test:it": "vitest .it-test.ts",
+    "test:ut": "vitest .test.ts",
     "tidy": "yarn check-types && yarn lint:fix && yarn format:write"
   },
   "prettier": "@quasarwork/gear-prettier-config",
