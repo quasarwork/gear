@@ -3,7 +3,7 @@ import { Effect, Layer } from "effect";
 
 import { BigIntId } from "#progLangExtensions/ts/effect/schemas/ids/bigIntId.schema";
 import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { IdGenerationError } from "#server/sharedKernel/application/idGenerators/idGeneration.error";
+import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error";
 
 export const BigIntIdGeneratorDeterministic = () => {
   let inMemoryBigIntIds = new Set<BigIntId>();
@@ -35,7 +35,7 @@ export const BigIntIdGeneratorDeterministic = () => {
             return nextId;
           },
           catch: () =>
-            new IdGenerationError({
+            new BigIntIdGeneratorError({
               message: "No more bigint ids available in the in-memory set.",
             }),
         }),
@@ -55,7 +55,7 @@ export const BigIntIdGeneratorDeterministic = () => {
             return nextIds;
           },
           catch: () =>
-            new IdGenerationError({
+            new BigIntIdGeneratorError({
               message: "Not enough bigint ids available in the in-memory set.",
             }),
         }),

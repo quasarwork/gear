@@ -4,7 +4,7 @@ import { Effect, Layer } from "effect";
 import { BigIntId } from "#progLangExtensions/ts/effect/schemas/ids/bigIntId.schema";
 import { errorEnsure } from "#progLangExtensions/ts/errors/error.fns";
 import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { IdGenerationError } from "#server/sharedKernel/application/idGenerators/idGeneration.error";
+import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error";
 
 export const BigIntIdGeneratorSnowflake = Layer.succeed(
   BigIntIdGenerator,
@@ -19,7 +19,7 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
           return BigIntId.make(nextId);
         },
         catch: (unknown) =>
-          new IdGenerationError({
+          new BigIntIdGeneratorError({
             message: "Failed to generate next bigint id.",
             cause: errorEnsure(unknown),
           }),
@@ -34,7 +34,7 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
           return ids.map((id) => BigIntId.make(id));
         },
         catch: (unknown) =>
-          new IdGenerationError({
+          new BigIntIdGeneratorError({
             message: "Failed to generate next range of bigint ids.",
             cause: errorEnsure(unknown),
           }),
