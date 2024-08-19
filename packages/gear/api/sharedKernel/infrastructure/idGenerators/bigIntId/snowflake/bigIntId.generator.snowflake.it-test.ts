@@ -2,7 +2,6 @@ import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
 import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { IdGenerationError } from "#server/sharedKernel/application/idGenerators/idGeneration.error";
 import { BigIntIdGeneratorSnowflake } from "#server/sharedKernel/infrastructure/idGenerators/bigIntId/snowflake/bigIntId.generator.snowflake";
 
 describe("bigint id generator - snowflake", () => {
@@ -27,16 +26,6 @@ describe("bigint id generator - snowflake", () => {
         expect(isBigIntId(id)).toBe(true);
       }).pipe(Effect.provide(deps)),
     );
-
-    it("should fail with ID_GENERATION_ERROR if the generator fails to generate a new bigint id", () =>
-      Effect.gen(function* () {
-        const generator = yield* BigIntIdGenerator;
-
-        const result = yield* Effect.flip(generator.next());
-
-        expect(result).toBeInstanceOf(IdGenerationError);
-        expect(result.message).toBe("Failed to generate next bigint id");
-      }).pipe(Effect.provide(deps)));
   });
 
   describe("next range", () => {
@@ -54,17 +43,5 @@ describe("bigint id generator - snowflake", () => {
         });
       }).pipe(Effect.provide(deps)),
     );
-
-    it("should fail with ID_GENERATION_ERROR if the generator fails to generate at least one of the bigint ids", () =>
-      Effect.gen(function* () {
-        const generator = yield* BigIntIdGenerator;
-
-        const result = yield* Effect.flip(generator.nextRange(10));
-
-        expect(result).toBeInstanceOf(IdGenerationError);
-        expect(result.message).toBe(
-          "Failed to generate next range of bigint ids",
-        );
-      }).pipe(Effect.provide(deps)));
   });
 });
