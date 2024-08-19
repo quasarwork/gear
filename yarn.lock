@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@akashrajpurohit/snowflake-id@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@akashrajpurohit/snowflake-id/-/snowflake-id-2.0.0.tgz#8ef8a446382267721e13a1ae0ae6b9846f66a48c"
+  integrity sha512-9En2OKHBOO39vztHUxHUh/Xh6wTI1lEQ9c0ivr7QX3ozaKgs770TRJrgtBbQBeLLbMoLGG3fBk3otAlSY440pw==
+
 "@ampproject/remapping@^2.3.0":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.3.0.tgz#ed441b6fa600072520ce18b43d2c8cc8caecc7f4"

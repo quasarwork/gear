@@ -20,7 +20,8 @@
     "url": "https://quasar.work"
   },
   "imports": {
-    "#progLangExtensions/*": "./progLangExtensions/*.ts"
+    "#progLangExtensions/*": "./progLangExtensions/*.ts",
+    "#server/*": "./api/*.ts"
   },
   "scripts": {
     "check-types": "tsc --noEmit",
@@ -29,10 +30,12 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test:ut": "vitest .test.ts",
+    "test:it": "vitest .it-test.ts",
     "tidy": "yarn check-types && yarn lint:fix && yarn format:write"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "dependencies": {
+    "@akashrajpurohit/snowflake-id": "^2.0.0",
     "@effect/schema": "^0.71.0",
     "@effect/vitest": "^0.8.5",
     "effect": "^3.6.4",
