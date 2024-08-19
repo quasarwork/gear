@@ -29,6 +29,8 @@ export default config;
 
 Some rules have been disabled because of some conflicts with [Gadget] and [Effect] features.
 
+See [source code](./eslint.config.base.mjs) for more details.
+
 ## Available configurations
 
 ### `base.mjs`
