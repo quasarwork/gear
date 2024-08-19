@@ -29,12 +29,16 @@
     "lint:fix": "turbo run lint:fix",
     "format": "turbo run format",
     "format:write": "turbo run format:write",
-    "tidy": "turbo run tidy"
+    "tidy": "turbo run tidy",
+    "changeset:version": "changeset version",
+    "changeset:publish": "yarn tidy && yarn changeset:version && changeset publish"
   },
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "packageManager": "yarn@1.22.22",
-  "dependencies": {}
+  "dependencies": {
+    "@changesets/cli": "^2.27.7"
+  }
 }

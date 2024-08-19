@@ -245,6 +245,10 @@
   resolved "https://registry.yarnpkg.com/@n1ru4l/push-pull-async-iterable-iterator/-/push-pull-async-iterable-iterator-3.2.0.tgz#c15791112db68dd9315d329d652b7e797f737655"
   integrity sha512-3fkKj25kEjsfObL6IlKPAlHYPq/oYwUkkQ03zsTTiDjD7vg/RxjdiLeCydqtxHZP0JgsXL3D/X5oAkMGzuUp/Q==
 
+"@quasarwork/eslint-config-gear@file:../../packages/eslint-config-gear/quasarwork-eslint-config-gear-v0.0.1.tgz":
+  version "0.0.1"
+  resolved "file:../../packages/eslint-config-gear/quasarwork-eslint-config-gear-v0.0.1.tgz#e35f2266b89f6456658d11ad05abaa2179cba4a2"
+
 "@remix-run/router@1.19.0":
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.19.0.tgz#745dbffbce67f05386d57ca22c51dfd85c979593"

@@ -27,6 +27,7 @@
     "react-router-dom": "6.26.0"
   },
   "devDependencies": {
+    "@quasarwork/eslint-config-gear": "C:\\Users\\aurel\\00-documents-pros-et-persos\\00-pro\\01-side-projects\\@quasarwork\\gear\\packages\\eslint-config-gear\\quasarwork-eslint-config-gear-v0.0.1.tgz",
     "@gadgetinc/ggt": "^1.0.6",
     "@types/node": "^22.2.0",
     "@types/react": "^18.0.28",
