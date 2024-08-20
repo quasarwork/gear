@@ -3,9 +3,9 @@
   "display": "Gear (client)",
   "extends": "./base.json",
   "compilerOptions": {
-    "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "lib": ["es2020", "dom"],
     "types": ["@shopify/app-bridge-types", "vite/client"],

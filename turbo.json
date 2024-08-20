@@ -21,6 +21,9 @@
     },
     "test": {
       "cache": false
+    },
+    "build": {
+      "cache": false
     }
   }
 }

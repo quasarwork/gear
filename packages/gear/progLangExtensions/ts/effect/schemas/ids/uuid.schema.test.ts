@@ -3,7 +3,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { Uuid } from "./uuid.schema";
+import { Uuid } from "./uuid.schema.js";
 
 describe("uuid schema", () => {
   const UUID_VALID = {

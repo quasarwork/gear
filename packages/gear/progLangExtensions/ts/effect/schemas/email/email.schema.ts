@@ -1,7 +1,7 @@
 /* eslint-disable no-control-regex */
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema";
+import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema.js";
 
 // I cannot remember whether this code was taken from a library or AI generated
 // If you know where it comes from, please let me know and I will credit you

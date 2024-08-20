@@ -3,9 +3,9 @@
   "display": "Gear (extensions)",
   "extends": "./base.json",
   "compilerOptions": {
-    "target": "es2015",
-    "module": "esnext",
-    "moduleResolution": "node",
+    "target": "ES2015",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "lib": ["es2015", "dom"],
     "types": ["@shopify/app-bridge-types", "vite/client"],

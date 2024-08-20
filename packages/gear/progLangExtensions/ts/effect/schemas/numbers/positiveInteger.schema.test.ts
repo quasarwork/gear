@@ -2,7 +2,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { PositiveInteger } from "./positiveInteger.schema";
+import { PositiveInteger } from "./positiveInteger.schema.js";
 
 describe("positive integer schema", () => {
   it("should accept valid positive integers", () =>

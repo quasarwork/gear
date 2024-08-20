@@ -3,7 +3,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { Email } from "./email.schema";
+import { Email } from "./email.schema.js";
 
 describe("email schema", () => {
   it("should accept valid email addresses", () =>

@@ -1,6 +1,6 @@
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { StringInRange1To2048 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To2048.schema";
+import { StringInRange1To2048 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To2048.schema.js";
 
 /**
  * Implements fast shallow verification of hostnames. This does not perform a

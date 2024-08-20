@@ -1,7 +1,7 @@
-import { DateTimeProviderError } from "api/sharedKernel/application/dateTimeProviders/dateTime.provider.error";
 import { Context, Effect } from "effect";
 
 import type { SafeDate } from "#progLangExtensions/ts/effect/schemas/date/safeDate.schema";
+import { DateTimeProviderError } from "#server/sharedKernel/application/dateTimeProviders/dateTime.provider.error";
 
 export interface DateTimeProvider {
   readonly now: () => Effect.Effect<SafeDate, DateTimeProviderError>;
