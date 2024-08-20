@@ -17,10 +17,6 @@ export const permissions: GadgetPermissions = {
             filter:
               "accessControl/filters/shopify/shopifyGdprRequest.gelly",
           },
-          actions: {
-            create: true,
-            update: true,
-          },
         },
         shopifyShop: {
           read: {
@@ -29,8 +25,6 @@ export const permissions: GadgetPermissions = {
           actions: {
             install: true,
             reinstall: true,
-            uninstall: true,
-            update: true,
           },
         },
         shopifySync: {
@@ -38,9 +32,6 @@ export const permissions: GadgetPermissions = {
             filter: "accessControl/filters/shopify/shopifySync.gelly",
           },
           actions: {
-            abort: true,
-            complete: true,
-            error: true,
             run: true,
           },
         },
