@@ -27,11 +27,11 @@
     "check-types": "turbo run check-types",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "format": "turbo run format",
+    "format:check": "turbo run format:check",
     "format:write": "turbo run format:write",
     "tidy": "turbo run tidy",
-    "changeset:version": "changeset version",
-    "changeset:publish": "yarn tidy && yarn changeset:version && changeset publish"
+    "test": "turbo run test",
+    "changeset:publish": "yarn tidy && yarn changeset version && changeset publish"
   },
   "private": true,
   "workspaces": [

@@ -10,13 +10,16 @@
     "lint:fix": {
       "cache": false
     },
-    "format": {
+    "format:check": {
       "cache": false
     },
     "format:write": {
       "cache": false
     },
     "tidy": {
+      "cache": false
+    },
+    "test": {
       "cache": false
     }
   }
