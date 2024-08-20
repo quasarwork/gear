@@ -7,7 +7,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "🤖⬆️"
+      prefix: "🤖 ⬆️"
     assignees:
       - "aurelienbobenrieth"
     reviewers:
