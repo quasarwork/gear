@@ -10,7 +10,7 @@
     "lint:fix": {
       "cache": false
     },
-    "format": {
+    "format:check": {
       "cache": false
     },
     "format:write": {

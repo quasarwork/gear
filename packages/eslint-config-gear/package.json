@@ -25,7 +25,7 @@
     "./eslint.config.extensions.mjs": "./eslint.config.extensions.mjs"
   },
   "scripts": {
-    "format": "prettier --check .",
+    "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "tidy": "yarn format:write"
   },

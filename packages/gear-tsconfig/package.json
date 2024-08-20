@@ -25,7 +25,7 @@
   },
   "main": "tsconfig.base.json",
   "scripts": {
-    "format": "prettier --check .",
+    "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "tidy": "yarn format:write"
   },
