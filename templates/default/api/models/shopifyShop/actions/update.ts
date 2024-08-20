@@ -12,6 +12,8 @@ export async function run({ params, record }: UpdateShopifyShopActionContext) {
   await save(record);
 }
 
-export async function onSuccess() {}
+export async function onSuccess() {
+  // do nothing
+}
 
 export const options: ActionOptions = { actionType: "update" };
