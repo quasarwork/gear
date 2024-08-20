@@ -30,8 +30,7 @@
     "format": "turbo run format",
     "format:write": "turbo run format:write",
     "tidy": "turbo run tidy",
-    "changeset:version": "changeset version",
-    "changeset:publish": "yarn tidy && yarn changeset:version && changeset publish"
+    "changeset:publish": "yarn tidy && yarn changeset version && changeset publish"
   },
   "private": true,
   "workspaces": [
