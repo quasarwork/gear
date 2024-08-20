@@ -13,6 +13,7 @@
     "url": "https://github.com/quasarwork/gear"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
     "@quasarwork/gear-prettier-config": "*",
     "@quasarwork/gear-tsconfig": "*",
     "eslint": "^9.9.0",
