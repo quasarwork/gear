@@ -10,7 +10,7 @@ import {
   Text,
 } from "@shopify/polaris";
 
-import { api } from "../api";
+import { api } from "../api.js";
 
 export default function () {
   return (
