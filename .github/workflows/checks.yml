@@ -17,8 +17,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+
+      - name: CI Setup
         uses: ./.github/actions/ci-setup
+
       - run: yarn check-types
 
   lint:
@@ -27,8 +29,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+
+      - name: CI Setup
         uses: ./.github/actions/ci-setup
+
       - run: yarn lint
 
   format:
@@ -37,8 +41,10 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+
+      - name: CI Setup
         uses: ./.github/actions/ci-setup
+
       - run: yarn format:check
 
   test:
@@ -47,7 +53,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Install dependencies
+
+      - name: CI Setup
         uses: ./.github/actions/ci-setup
+
       - name: Run tests
         run: yarn test

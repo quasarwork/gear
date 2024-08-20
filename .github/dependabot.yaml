@@ -7,7 +7,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "⬆️ (dependabot)"
+      prefix: "🤖⬆️"
     assignees:
       - "aurelienbobenrieth"
     reviewers:

@@ -18,6 +18,9 @@
     },
     "tidy": {
       "cache": false
+    },
+    "test": {
+      "cache": false
     }
   }
 }
