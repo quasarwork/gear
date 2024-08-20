@@ -368,9 +368,9 @@
   integrity sha512-6bMAO+PAR08/zcwoxAi78Oxc9kmO51XpDGX2vehOHPyBQ2APcrX5XTNHd/l0CwP3z3kJESP1jyt0eDbM7T/XAw==
 
 "@quasarwork/gear-tsconfig@latest":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@quasarwork/gear-tsconfig/-/gear-tsconfig-0.1.0.tgz#9b2f0ed3e6f60ca30a1742f3be811165817f6ddb"
-  integrity sha512-/55JCwuc5U0eQADT6u7L8sT2/CgtSBfv3+cf9BWKm19r37VD2Aa7UY+obXUV4ovNnLz9vT+a27u+LibSDQgtpA==
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@quasarwork/gear-tsconfig/-/gear-tsconfig-0.1.1.tgz#ddcdeec3246f5d966cfa83964f480e02c557485b"
+  integrity sha512-Om/dOuRAubVHZbR94ZnBIn52A8+HOARo985oC2vlGZp/gpLGBvoE9Vzh22noSqdMw9HznY0tJewb9bcQF8S6yQ==
 
 "@quasarwork/gear@latest":
   version "0.1.0"

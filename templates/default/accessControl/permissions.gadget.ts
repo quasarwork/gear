@@ -14,8 +14,7 @@ export const permissions: GadgetPermissions = {
       models: {
         shopifyGdprRequest: {
           read: {
-            filter:
-              "accessControl/filters/shopify/shopifyGdprRequest.gelly",
+            filter: "accessControl/filters/shopify/shopifyGdprRequest.gelly",
           },
         },
         shopifyShop: {
