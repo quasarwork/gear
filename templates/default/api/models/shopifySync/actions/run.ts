@@ -13,9 +13,7 @@ export async function run({ params, record }: RunShopifySyncActionContext) {
   await shopifySync(params, record);
 }
 
-export async function onSuccess() {
-  // do nothing
-}
+export async function onSuccess() {}
 
 export const options: ActionOptions = {
   actionType: "create",
