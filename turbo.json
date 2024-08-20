@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
-    "check-types": {
+    "types:check": {
       "cache": false
     },
     "lint": {
@@ -20,6 +20,9 @@
       "cache": false
     },
     "test": {
+      "cache": false
+    },
+    "build": {
       "cache": false
     }
   }
