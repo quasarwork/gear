@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 0.1.1
+
+### Patch Changes
+
+- [#14](https://github.com/quasarwork/gear/pull/14) [`bd88324`](https://github.com/quasarwork/gear/commit/bd883246e74fc8ee9dcd43df8a46f70532dd100d) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed tsconfig base config inheritance
+
 ## 0.1.0
 
 ### Minor Changes
