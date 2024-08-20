@@ -24,14 +24,14 @@
     "#server/*": "./api/*.ts"
   },
   "scripts": {
-    "check-types": "tsc --noEmit",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test:it": "vitest .it-test.ts",
     "test:ut": "vitest .test.ts",
-    "tidy": "yarn check-types && yarn lint:fix && yarn format:write"
+    "tidy": "yarn types:check && yarn lint:fix && yarn format:write",
+    "types:check": "tsc --noEmit"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "dependencies": {
