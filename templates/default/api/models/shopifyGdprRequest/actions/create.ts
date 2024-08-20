@@ -15,7 +15,9 @@ export async function run({
   await save(record);
 }
 
-export function onSuccess({ record }: CreateShopifyGdprRequestActionContext) {
+export async function onSuccess({
+  record,
+}: CreateShopifyGdprRequestActionContext) {
   switch (record.topic) {
     case "customers/data_request":
       // This process is a manual one. You must provide the customer's data to the store owners directly.

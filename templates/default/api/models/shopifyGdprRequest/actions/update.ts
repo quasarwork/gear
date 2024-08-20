@@ -6,6 +6,9 @@ import {
 } from "gadget-server";
 import { preventCrossShopDataAccess } from "gadget-server/shopify";
 
+/**
+ * @param { UpdateShopifyGdprRequestActionContext } context
+ */
 export async function run({
   params,
   record,
@@ -15,8 +18,6 @@ export async function run({
   await save(record);
 }
 
-export async function onSuccess() {
-  // do nothing
-}
+export async function onSuccess() {}
 
 export const options: ActionOptions = { actionType: "update" };
