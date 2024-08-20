@@ -25,7 +25,8 @@
     "gadget-server": "link:.gadget/server",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "6.26.0"
+    "react-router-dom": "6.26.0",
+    "shopify-api-node": "^3.12.6"
   },
   "devDependencies": {
     "@gadgetinc/ggt": "^1.0.6",
