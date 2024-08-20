@@ -1,3 +1,15 @@
 {
-  "extends": "@quasarwork/gear-tsconfig/tsconfig.base.json"
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "types",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2020",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["**/*.mjs"],
+  "exclude": ["node_modules"]
 }

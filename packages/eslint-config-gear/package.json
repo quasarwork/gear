@@ -20,14 +20,25 @@
   },
   "type": "module",
   "exports": {
-    "./eslint.config.base.mjs": "./eslint.config.base.mjs",
-    "./eslint.config.client.mjs": "./eslint.config.client.mjs",
-    "./eslint.config.extensions.mjs": "./eslint.config.extensions.mjs"
+    "./eslint.config.base.mjs": {
+      "types": "./types/eslint.config.base.d.mts",
+      "import": "./eslint.config.base.mjs"
+    },
+    "./eslint.config.client.mjs": {
+      "types": "./types/eslint.config.client.d.mts",
+      "import": "./eslint.config.client.mjs"
+    },
+    "./eslint.config.extensions.mjs": {
+      "types": "./types/eslint.config.extensions.d.mts",
+      "import": "./eslint.config.extensions.mjs"
+    }
   },
   "scripts": {
+    "build": "yarn types:generate",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "tidy": "yarn format:write"
+    "tidy": "yarn format:write",
+    "types:generate": "tsc"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "devDependencies": {
