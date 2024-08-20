@@ -6,6 +6,9 @@ import {
 } from "gadget-server";
 import { preventCrossShopDataAccess } from "gadget-server/shopify";
 
+/**
+ * @param { UpdateShopifyGdprRequestActionContext } context
+ */
 export async function run({
   params,
   record,
