@@ -357,22 +357,22 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@quasarwork/eslint-config-gear@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@quasarwork/eslint-config-gear/-/eslint-config-gear-0.0.1.tgz#67d23b4fda1c15df3243fa3f1adbebca0087473d"
-  integrity sha512-nUt2Zcr3SfJlFo0joe/+d5dy/f8zqS54NDbOHMAudbfA9y/4gSRraAsCCHXcLmoIwRdqIEXd9dh2fLqsNHxMdg==
+"@quasarwork/eslint-config-gear@latest":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@quasarwork/eslint-config-gear/-/eslint-config-gear-0.1.0.tgz#1e139d43062b83fb20bd21a26897f8df9e1b018c"
+  integrity sha512-E/JPl0k41+vWNtIyXx7sJU766+glkUG92Ynl7ixB+bwo5Ab/RS3+rRQ820gqXf6sOzwzgbBUH8t8sRUKcIrgsA==
 
-"@quasarwork/gear-prettier-config@^0.0.1":
+"@quasarwork/gear-prettier-config@latest":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@quasarwork/gear-prettier-config/-/gear-prettier-config-0.0.1.tgz#2a8e66e981d3da2f4b57a0cb8e1664e1d9aa283f"
   integrity sha512-6bMAO+PAR08/zcwoxAi78Oxc9kmO51XpDGX2vehOHPyBQ2APcrX5XTNHd/l0CwP3z3kJESP1jyt0eDbM7T/XAw==
 
-"@quasarwork/gear-tsconfig@^0.0.1":
+"@quasarwork/gear-tsconfig@latest":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@quasarwork/gear-tsconfig/-/gear-tsconfig-0.0.1.tgz#7556d019c062a564b21208a3316549b15b21f017"
   integrity sha512-U3FQ/5sVD+S4FUPONar4mWccnNpvXEnJ86o7nne+VGTiMcdqrEs5rWJj8pQ1Kk+JzNv5UYeTTKCTG7su9pFmXg==
 
-"@quasarwork/gear@^0.0.1":
+"@quasarwork/gear@latest":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@quasarwork/gear/-/gear-0.0.1.tgz#9482b24a7f66f341dfefe7a0377e5b4f7652f1d4"
   integrity sha512-fbSlMTKGLUy2p8wXc+JAbQLdBr6vocGHteaVC+sCM5cguMrtnpmSwTcPDYBmQWDeTToqvXMm43feNid+Vkc8yw==
