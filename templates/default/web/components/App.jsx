@@ -16,6 +16,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
+
 import { api } from "../api";
 import AboutPage from "../routes/about";
 import Index from "../routes/index";
@@ -43,8 +44,8 @@ function App() {
         <Route index element={<Index />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<Error404 />} />
-      </Route>
-    )
+      </Route>,
+    ),
   );
 
   return (

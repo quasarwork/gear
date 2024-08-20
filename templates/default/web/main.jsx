@@ -3,6 +3,7 @@ import "@shopify/polaris/build/esm/styles.css";
 import enTranslations from "@shopify/polaris/locales/en.json";
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import App from "./components/App";
 
 const root = document.getElementById("root");
@@ -13,5 +14,5 @@ ReactDOM.createRoot(root).render(
     <AppProvider i18n={enTranslations}>
       <App />
     </AppProvider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
