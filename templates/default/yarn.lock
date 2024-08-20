@@ -358,9 +358,9 @@
     fastq "^1.6.0"
 
 "@quasarwork/eslint-config-gear@latest":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@quasarwork/eslint-config-gear/-/eslint-config-gear-0.1.0.tgz#1e139d43062b83fb20bd21a26897f8df9e1b018c"
-  integrity sha512-E/JPl0k41+vWNtIyXx7sJU766+glkUG92Ynl7ixB+bwo5Ab/RS3+rRQ820gqXf6sOzwzgbBUH8t8sRUKcIrgsA==
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@quasarwork/eslint-config-gear/-/eslint-config-gear-0.2.0.tgz#fb90c0146aaf04ecf59822334d7da428b0543501"
+  integrity sha512-dRHyHwh8Xyw0R7MOOp1NxxAbBCJn8F+HXKRs0O2FQ9Wjm9/0cSwe3PQE3j+Zc/4T6py7iiZ5B3VM82yHXLVdRA==
 
 "@quasarwork/gear-prettier-config@latest":
   version "0.0.1"
@@ -368,14 +368,14 @@
   integrity sha512-6bMAO+PAR08/zcwoxAi78Oxc9kmO51XpDGX2vehOHPyBQ2APcrX5XTNHd/l0CwP3z3kJESP1jyt0eDbM7T/XAw==
 
 "@quasarwork/gear-tsconfig@latest":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@quasarwork/gear-tsconfig/-/gear-tsconfig-0.0.1.tgz#7556d019c062a564b21208a3316549b15b21f017"
-  integrity sha512-U3FQ/5sVD+S4FUPONar4mWccnNpvXEnJ86o7nne+VGTiMcdqrEs5rWJj8pQ1Kk+JzNv5UYeTTKCTG7su9pFmXg==
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@quasarwork/gear-tsconfig/-/gear-tsconfig-0.1.0.tgz#9b2f0ed3e6f60ca30a1742f3be811165817f6ddb"
+  integrity sha512-/55JCwuc5U0eQADT6u7L8sT2/CgtSBfv3+cf9BWKm19r37VD2Aa7UY+obXUV4ovNnLz9vT+a27u+LibSDQgtpA==
 
 "@quasarwork/gear@latest":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@quasarwork/gear/-/gear-0.0.1.tgz#9482b24a7f66f341dfefe7a0377e5b4f7652f1d4"
-  integrity sha512-fbSlMTKGLUy2p8wXc+JAbQLdBr6vocGHteaVC+sCM5cguMrtnpmSwTcPDYBmQWDeTToqvXMm43feNid+Vkc8yw==
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@quasarwork/gear/-/gear-0.1.0.tgz#024ff5ab4037786b2dd68b1818fc3d9fe257c589"
+  integrity sha512-IYZPIWF7iCOlp8FT7qIjUgf6WHKkCDJri/ppFGB+uC58ffwEyk3XFFQvrmH8D+Zet+0U+Qpy3O2E1rF8e/vc9A==
   dependencies:
     "@akashrajpurohit/snowflake-id" "^2.0.0"
     "@effect/schema" "^0.71.0"
@@ -851,6 +851,11 @@ ajv@^8.0.0, ajv@^8.10.0, ajv@^8.11.0:
     fast-uri "^3.0.1"
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
+
+ansi-regex@*:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-6.0.1.tgz#3183e38fae9a65d7cb5e53945cd5897d0260a06a"
+  integrity sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==
 
 ansi-regex@^2.0.0:
   version "2.1.1"
@@ -2225,7 +2230,7 @@ import-fresh@^3.2.1:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==
