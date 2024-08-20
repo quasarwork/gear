@@ -4,7 +4,7 @@ import enTranslations from "@shopify/polaris/locales/en.json";
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import App from "./components/App";
+import App from "./components/App.jsx";
 
 const root = document.getElementById("root");
 if (!root) throw new Error("#root element not found for booting react app");

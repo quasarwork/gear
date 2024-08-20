@@ -17,9 +17,9 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-import { api } from "../api";
-import AboutPage from "../routes/about";
-import Index from "../routes/index";
+import { api } from "../api.js";
+import AboutPage from "../routes/about.js";
+import Index from "../routes/index.js";
 import "./App.css";
 
 function Error404() {
