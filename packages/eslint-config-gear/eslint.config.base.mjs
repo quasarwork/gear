@@ -50,6 +50,7 @@ export default tseslint.config(
       "*.gadget.ts",
       "**/web/*",
       "**/extensions/*",
+      "**/types/*",
     ],
   },
   {

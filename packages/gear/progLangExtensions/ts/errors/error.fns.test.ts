@@ -4,9 +4,9 @@ import {
   DEFAULT_ERROR_MESSAGE,
   DEFAULT_ERROR_NAME,
   DEFAULT_ERROR_STACK,
-} from "./error.constants";
-import { errorEnsure } from "./error.fns";
-import { FromUnknownThrownError } from "./fromUnknownThrownError";
+} from "./error.constants.js";
+import { errorEnsure } from "./error.fns.js";
+import { FromUnknownThrownError } from "./fromUnknownThrownError.js";
 
 describe("errorEnsure", () => {
   describe("given an unknown thrown value", () => {

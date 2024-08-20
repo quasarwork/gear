@@ -2,9 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Gear (base)",
   "compilerOptions": {
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "esnext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
     "strict": true,
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -26,6 +26,7 @@
     "rootDir": "${configDir}",
     "incremental": true,
     "resolveJsonModule": true,
+    "lib": ["ES2022"],
     "paths": {
       "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
       "#server/*": ["${configDir}/api/*"]

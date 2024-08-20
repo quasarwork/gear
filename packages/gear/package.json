@@ -19,6 +19,7 @@
     "name": "Aurélien BOBENRIETH",
     "url": "https://quasar.work"
   },
+  "type": "module",
   "imports": {
     "#progLangExtensions/*": "./progLangExtensions/*.ts",
     "#server/*": "./api/*.ts"

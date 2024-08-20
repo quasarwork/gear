@@ -1,8 +1,9 @@
+import { Layer } from "effect";
+
 import {
   Logger,
   LoggerMethod,
-} from "api/sharedKernel/application/logger/logger";
-import { Layer } from "effect";
+} from "#server/sharedKernel/application/logger/logger";
 
 const silentLoggerMethod: LoggerMethod = () => {
   // do nothing

@@ -2,7 +2,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { SafeDate } from "./safeDate.schema";
+import { SafeDate } from "./safeDate.schema.js";
 
 describe("safe date schema", () => {
   it("should accept valid dates from dates and return a date", () =>

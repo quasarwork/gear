@@ -4,9 +4,9 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "types",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "es2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
     "strict": true,
     "esModuleInterop": true
   },

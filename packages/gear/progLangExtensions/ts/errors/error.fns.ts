@@ -2,8 +2,8 @@ import {
   DEFAULT_ERROR_MESSAGE,
   DEFAULT_ERROR_NAME,
   DEFAULT_ERROR_STACK,
-} from "./error.constants";
-import { FromUnknownThrownError } from "./fromUnknownThrownError";
+} from "./error.constants.js";
+import { FromUnknownThrownError } from "./fromUnknownThrownError.js";
 
 /**
  * @see https://medium.com/with-orus/the-5-commandments-of-clean-error-handling-in-typescript-93a9cbdf1af5

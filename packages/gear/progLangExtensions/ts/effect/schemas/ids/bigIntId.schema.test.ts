@@ -3,7 +3,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { BigIntId } from "./bigIntId.schema";
+import { BigIntId } from "./bigIntId.schema.js";
 
 describe("big int id schema", () => {
   const BIGINT_ID_VALID = ["123", "1234567891234567891", 50077];

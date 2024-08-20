@@ -1,6 +1,6 @@
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { StringInRange1To2048 } from "../string/stringInRange1To2048.schema";
+import { StringInRange1To2048 } from "../string/stringInRange1To2048.schema.js";
 
 /**
  * @see https://www.ietf.org/rfc/rfc3986.txt
