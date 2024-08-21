@@ -25,7 +25,7 @@
     "format:write": "prettier --write --config prettier.config.mjs .",
     "tidy": "yarn format:write"
   },
-  "devDependencies": {
+  "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "prettier": "^3.3.3",
     "prettier-plugin-jsdoc": "^1.3.0",
