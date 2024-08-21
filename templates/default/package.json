@@ -2,6 +2,9 @@
   "name": "quasarwork-gear-app",
   "version": "0.0.1",
   "description": "Gear-app is a boilerplate helping you to build Shopify apps with the Gadget platform.",
+  "imports": {
+    "#client/*": "./web/*"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/quasarwork/gear-app"

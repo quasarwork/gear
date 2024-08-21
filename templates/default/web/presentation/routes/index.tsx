@@ -9,8 +9,7 @@ import {
   Page,
   Text,
 } from "@shopify/polaris";
-
-import { api } from "../api.js";
+import { api } from "api.js";
 
 export default function () {
   return (

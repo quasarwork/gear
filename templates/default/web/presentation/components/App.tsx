@@ -5,6 +5,10 @@ import {
 } from "@gadgetinc/react-shopify-app-bridge";
 import { NavMenu } from "@shopify/app-bridge-react";
 import { Box, Card, Page, Spinner, Text } from "@shopify/polaris";
+import { api } from "api.js";
+import "presentation/components/App.css";
+import AboutPage from "presentation/routes/about.js";
+import Index from "presentation/routes/index.js";
 import { useEffect } from "react";
 import {
   Link,
@@ -17,17 +21,12 @@ import {
   useNavigate,
 } from "react-router-dom";
 
-import { api } from "../api.js";
-import AboutPage from "../routes/about.js";
-import Index from "../routes/index.js";
-import "./App.css";
-
 function Error404() {
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
-    const appURL = process.env.GADGET_PUBLIC_SHOPIFY_APP_URL;
+    const appURL = import.meta.env["GADGET_PUBLIC_SHOPIFY_APP_URL"];
 
     if (appURL && location.pathname === new URL(appURL).pathname) {
       navigate("/", { replace: true });
@@ -114,7 +113,7 @@ function UnauthenticatedApp() {
             <Text variant="bodyLg" as="p">
               Edit this page:{" "}
               <a
-                href={`/edit/${process.env.GADGET_PUBLIC_APP_ENV}/files/web/components/App.jsx`}
+                href={`/edit/${import.meta.env["GADGET_PUBLIC_APP_ENV"]}/files/web/components/App.jsx`}
               >
                 web/components/App.jsx
               </a>
