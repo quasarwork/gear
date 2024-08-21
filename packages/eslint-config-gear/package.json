@@ -41,10 +41,9 @@
     "types:generate": "tsc"
   },
   "prettier": "@quasarwork/gear-prettier-config",
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^9.9.0",
     "@quasarwork/gear-prettier-config": "*",
-    "@types/eslint__js": "^8.42.3",
     "eslint": "^9.9.0",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
@@ -52,8 +51,11 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.5.4",
     "typescript-eslint": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "typescript": "^5.5.4"
   },
   "peerDependencies": {
     "eslint": ">= 9"

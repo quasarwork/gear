@@ -375,16 +375,16 @@
     prettier "^2.7.1"
 
 "@effect/schema@^0.71.0":
-  version "0.71.0"
-  resolved "https://registry.yarnpkg.com/@effect/schema/-/schema-0.71.0.tgz#b760e64538f6984b960469a133277a698b31f6e4"
-  integrity sha512-rw2AP16bXaejUHAdUm6n86KSzhvZCZA/OYpCoZV+Q1gXNe65lQ2aRYaiSpMUxqK49j6FkcY3MvwehJ8jP7suTA==
+  version "0.71.1"
+  resolved "https://registry.yarnpkg.com/@effect/schema/-/schema-0.71.1.tgz#4d344b3c44b2490fb6d6698439956a25ae18ea0f"
+  integrity sha512-XvFttkuBUL3s4ofZ+OVE4Pagb4wsPG8laSS8iO5lVI9Yt1zIM49uxlYIA2BJ45jjS3MdplUepC0NilotKnjU2A==
   dependencies:
     fast-check "^3.21.0"
 
 "@effect/vitest@^0.8.5":
-  version "0.8.5"
-  resolved "https://registry.yarnpkg.com/@effect/vitest/-/vitest-0.8.5.tgz#83bba80b7acc632f260455512cf2fa135bfed313"
-  integrity sha512-IGb8KuY63YVanLWdmhWNhGkdVwNA4R4ouoRRWnPdBIjUFXQak6KXZIZJjKEuj7A2359uqVuCEcKoANS4st7W/w==
+  version "0.8.6"
+  resolved "https://registry.yarnpkg.com/@effect/vitest/-/vitest-0.8.6.tgz#cd4dc12eb033d5516ff45a82b474f7a1c083a838"
+  integrity sha512-Alm/ZG8NSYUiWaHQwLhG/7CIoE9rXo57r4t9VPtzokKvXKidQhD1E4sN84uIcpq+DH6WpCXg6MjZoTrKbl2GFA==
 
 "@esbuild/aix-ppc64@0.21.5":
   version "0.21.5"
@@ -784,9 +784,9 @@
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
 
 "@types/node@^22.4.1":
-  version "22.4.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.4.1.tgz#9b595d292c65b94c20923159e2ce947731b6fdce"
-  integrity sha512-1tbpb9325+gPnKK0dMm+/LMriX0vKxf6RnB0SZUqfyVkQ4fMgUSySqhxE/y8Jvs4NyF1yHzTfG9KlnkIODxPKg==
+  version "22.4.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.4.2.tgz#55fefb1c3dba2ecd7eb76738c6b80da75760523f"
+  integrity sha512-nAvM3Ey230/XzxtyDcJ+VjvlzpzoHwLsF7JaDRfoI0ytO0mVheerNmM45CtA0yOILXwXXxOrcUWH3wltX+7PSw==
   dependencies:
     undici-types "~6.19.2"
 
@@ -1388,9 +1388,9 @@ dotenv@^8.1.0:
   integrity sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==
 
 effect@^3.6.4:
-  version "3.6.4"
-  resolved "https://registry.yarnpkg.com/effect/-/effect-3.6.4.tgz#55aee5ffa144391124b3278caa654a21516d741f"
-  integrity sha512-nNsn+Uw/n4bHKR8w45IIuYGLCgHsQodjRPB+BHreylQJ89W3iLc/Av9CiL9uvtO/ERp4e3oy5wrTO2J2pkbRRw==
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/effect/-/effect-3.6.5.tgz#be177847e69273ea9ed95bebe03bd672c5af474b"
+  integrity sha512-NhopZTAKljaAlR0CEroOAJJngdqg7bzlnWcDrCwh4d2WNVohVbBtUS4SGqLt8tUy7IFsTWATYiUtmhDG+YELjA==
 
 enquirer@^2.3.0:
   version "2.4.1"
@@ -1569,9 +1569,9 @@ eslint-plugin-react-hooks@^4.6.2:
   integrity sha512-QzliNJq4GinDBcD8gPB5v0wh6g8q3SUi6EFF0x8N/BL9PoVs0atuGc47ozMRyOWAKdwaZ5OnbOEa3WR+dSGKuQ==
 
 eslint-plugin-react-refresh@^0.4.9:
-  version "0.4.9"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.9.tgz#bf870372b353b12e1e6fb7fc41b282d9cbc8d93d"
-  integrity sha512-QK49YrBAo5CLNLseZ7sZgvgTy21E6NEw22eZqc4teZfH8pxV3yXc9XXOYfUI6JNpw7mfHNkAeWtBxrTyykB6HA==
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.10.tgz#1fb514897ee3bdc37ac34446fa5f02b1ce9c7d3f"
+  integrity sha512-I39s6G9We7ZxbCRxTTM5XX4KJV2cfWhFbHF4kTuL0ygdEVdQXtCNGqUQ43sBOCbTC/N6dEZXoQKFHr8gp1VHrQ==
 
 eslint-plugin-react@^7.35.0:
   version "7.35.0"
@@ -3166,7 +3166,7 @@ reusify@^1.0.4:
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
 
-rollup@^4.13.0:
+rollup@^4.20.0:
   version "4.21.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.21.0.tgz#28db5f5c556a5180361d35009979ccc749560b9d"
   integrity sha512-vo+S/lfA2lMS7rZ2Qoubi6I5hwZwzXeUIctILZLbHI+laNtvhhOIon2S1JksA5UEDQ7l3vberd0fxK44lTYjbQ==
@@ -3721,13 +3721,13 @@ vite-node@2.0.5:
     vite "^5.0.0"
 
 vite@^5.0.0, vite@^5.4.1:
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.1.tgz#2aa72370de824d23f53658affd807e4c9905b058"
-  integrity sha512-1oE6yuNXssjrZdblI9AfBbHCC41nnyoVoEZxQnID6yvQZAFBzxxkqoFLtHUMkYunL8hwOLEjgTuxpkRxvba3kA==
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.4.2.tgz#8acb6ec4bfab823cdfc1cb2d6c53ed311bc4e47e"
+  integrity sha512-dDrQTRHp5C1fTFzcSaMxjk6vdpKvT+2/mIdE07Gw2ykehT49O0z/VHS3zZ8iV/Gh8BJJKHWOe5RjaNrW5xf/GA==
   dependencies:
     esbuild "^0.21.3"
     postcss "^8.4.41"
-    rollup "^4.13.0"
+    rollup "^4.20.0"
   optionalDependencies:
     fsevents "~2.3.3"
 
