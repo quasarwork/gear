@@ -1,5 +1,11 @@
 # @quasarwork/eslint-config-gear
 
+## 0.2.3
+
+### Patch Changes
+
+- [#20](https://github.com/quasarwork/gear/pull/20) [`22545a9`](https://github.com/quasarwork/gear/commit/22545a92275c4362f2af73fa262195a1d79b5d9b) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - removed forgotten debugging log
+
 ## 0.2.2
 
 ### Patch Changes
