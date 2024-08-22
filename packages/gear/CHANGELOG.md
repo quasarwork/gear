@@ -1,5 +1,15 @@
 # @quasarwork/gear
 
+## 0.3.0
+
+### Minor Changes
+
+- [#24](https://github.com/quasarwork/gear/pull/24) [`4931c7d`](https://github.com/quasarwork/gear/commit/4931c7dadf475d2535d25abddac1156110aaf6e3) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - increased cohesion within gear
+
+### Patch Changes
+
+- [#24](https://github.com/quasarwork/gear/pull/24) [`4931c7d`](https://github.com/quasarwork/gear/commit/4931c7dadf475d2535d25abddac1156110aaf6e3) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - reverted the major bump which happened for no reason &updated bundling + exports
+
 ## 0.2.0
 
 ### Minor Changes
