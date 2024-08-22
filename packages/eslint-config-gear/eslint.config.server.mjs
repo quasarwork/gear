@@ -1,28 +1,24 @@
-import eslintPluginReact from "eslint-plugin-react";
-import eslintPluginReactHooks from "eslint-plugin-react-hooks";
-import eslintPluginReactRefresh from "eslint-plugin-react-refresh";
+import eslintPluginPrettier from "eslint-plugin-prettier";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
 import eslintConfigGearBase from "./eslint.config.base.mjs";
 
-const config = tseslint.config(
+export default tseslint.config(
   {
-    name: "Gear (client)",
+    name: "Gear (server)",
   },
   ...eslintConfigGearBase,
   {
     languageOptions: {
       globals: {
-        ...globals.browser,
+        ...globals.node,
       },
     },
   },
   {
     plugins: {
-      eslintPluginReact,
-      eslintPluginReactHooks,
-      eslintPluginReactRefresh,
+      eslintPluginPrettier,
     },
   },
   {
@@ -46,12 +42,9 @@ const config = tseslint.config(
       "**/node_modules/*",
       "**/.gadget/*",
       "*.gadget.ts",
-      "**/api/*",
+      "**/web/*",
       "**/extensions/*",
+      "**/types/*",
     ],
   },
 );
-
-console.log(config);
-
-export default config;

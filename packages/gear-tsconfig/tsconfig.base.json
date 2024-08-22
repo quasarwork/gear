@@ -26,19 +26,13 @@
     "rootDir": "${configDir}",
     "incremental": true,
     "resolveJsonModule": true,
-    "lib": ["ES2022"],
-    "paths": {
-      "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
-      "#server/*": ["${configDir}/api/*"]
-    }
+    "lib": ["ES2022"]
   },
   "exclude": [
-    "${configDir}/**/node_modules",
+    "**/node_modules",
     "${configDir}/**/dist",
     "${configDir}/**/build",
-    "*.gadget",
-    "${configDir}/web/*",
-    "${configDir}/extensions/*"
+    "*.gadget"
   ],
   "include": [
     "${configDir}/**/*.ts",

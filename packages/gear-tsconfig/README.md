@@ -18,13 +18,13 @@ To enable a configuration, extend your `tsconfig.json` file by adding the `exten
 
 ```json
 {
-  "extends": "@quasarwork/gear-tsconfig/tsconfig.base.json"
+  "extends": "@quasarwork/gear-tsconfig/tsconfig.server.json"
 }
 ```
 
 ## Available configurations
 
-### `tsconfig.base.json`
+### `tsconfig.server.json`
 
 This configuration is the base configuration for all [Quasar.work]'s [Gear ⚙️] projects.
 

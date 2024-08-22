@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Gear (server)",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "paths": {
+      "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
+      "#server/*": ["${configDir}/api/*"]
+    }
+  },
+  "exclude": ["${configDir}/web/*", "${configDir}/extensions/*"]
+}

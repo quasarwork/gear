@@ -19,11 +19,10 @@
     "url": "https://quasar.work"
   },
   "exports": {
-    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsconfig.server.json": "./tsconfig.server.json",
     "./tsconfig.client.json": "./tsconfig.client.json",
     "./tsconfig.extensions.json": "./tsconfig.extensions.json"
   },
-  "main": "tsconfig.base.json",
   "scripts": {
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",

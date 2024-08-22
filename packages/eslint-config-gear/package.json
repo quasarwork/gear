@@ -20,9 +20,9 @@
   },
   "type": "module",
   "exports": {
-    "./eslint.config.base.mjs": {
-      "types": "./types/eslint.config.base.d.mts",
-      "import": "./eslint.config.base.mjs"
+    "./eslint.config.server.mjs": {
+      "types": "./types/eslint.config.server.d.mts",
+      "import": "./eslint.config.server.mjs"
     },
     "./eslint.config.client.mjs": {
       "types": "./types/eslint.config.client.d.mts",

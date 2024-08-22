@@ -17,10 +17,10 @@ yarn add -D eslint typescript typescript-eslint @quasarwork/eslint-config-gear
 Add the following to your `estlint.config.mjs` file:
 
 ```js
-import eslintConfigGearBase from "@quasarwork/eslint-config-gear/eslint.config.base.mjs";
+import eslintConfigGearServer from "@quasarwork/eslint-config-gear/eslint.config.server.mjs";
 import tseslint from "typescript-eslint";
 
-const config = tseslint.config(...eslintConfigGearBase);
+const config = tseslint.config(...eslintConfigGearServer);
 
 export default config;
 ```
@@ -33,7 +33,7 @@ See [source code](./eslint.config.base.mjs) for more details.
 
 ## Available configurations
 
-### `base.mjs`
+### `server.mjs`
 
 This configuration is the base configuration for all [Quasar.work]'s [Gear ⚙️] projects.
 

@@ -4,7 +4,7 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2015",
-    "module": "ESNext",
+    "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "lib": ["es2015", "dom"],
