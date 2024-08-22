@@ -33,7 +33,7 @@ See [source code](./eslint.config.base.mjs) for more details.
 
 ## Available configurations
 
-### `base.mjs`
+### `server.mjs`
 
 This configuration is the base configuration for all [Quasar.work]'s [Gear ⚙️] projects.
 

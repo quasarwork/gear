@@ -24,7 +24,7 @@ To enable a configuration, extend your `tsconfig.json` file by adding the `exten
 
 ## Available configurations
 
-### `tsconfig.base.json`
+### `tsconfig.server.json`
 
 This configuration is the base configuration for all [Quasar.work]'s [Gear ⚙️] projects.
 

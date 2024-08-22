@@ -26,13 +26,13 @@
     "rootDir": "${configDir}",
     "incremental": true,
     "resolveJsonModule": true,
-    "lib": ["ES2022"],
+    "lib": ["ES2022"]
   },
   "exclude": [
-    "${configDir}/**/node_modules",
+    "**/node_modules",
     "${configDir}/**/dist",
     "${configDir}/**/build",
-    "*.gadget",
+    "*.gadget"
   ],
   "include": [
     "${configDir}/**/*.ts",
