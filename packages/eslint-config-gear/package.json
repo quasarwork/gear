@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/eslint-config-gear",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Opinionated ESLint configuration for Quasar.work's Gear projects",
   "keywords": [
     "eslint",
