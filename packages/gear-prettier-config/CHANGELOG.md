@@ -1,5 +1,13 @@
 # @quasarwork/gear-prettier-config
 
+## 1.0.0
+
+### Patch Changes
+
+- Updated dependencies [[`0c52143`](https://github.com/quasarwork/gear/commit/0c5214343e6e246be08e573970c805064a82dead), [`0c52143`](https://github.com/quasarwork/gear/commit/0c5214343e6e246be08e573970c805064a82dead)]:
+  - @quasarwork/eslint-config-gear@1.0.0
+  - @quasarwork/gear-tsconfig@1.0.0
+
 ## 0.0.2
 
 ### Patch Changes

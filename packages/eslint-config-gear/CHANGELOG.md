@@ -1,5 +1,19 @@
 # @quasarwork/eslint-config-gear
 
+## 1.0.0
+
+### Minor Changes
+
+- [#22](https://github.com/quasarwork/gear/pull/22) [`0c52143`](https://github.com/quasarwork/gear/commit/0c5214343e6e246be08e573970c805064a82dead) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - refactored the way packages are bundled and should be imported
+
+### Patch Changes
+
+- [#22](https://github.com/quasarwork/gear/pull/22) [`0c52143`](https://github.com/quasarwork/gear/commit/0c5214343e6e246be08e573970c805064a82dead) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - refactored the way the package is meant to be imported
+
+- Updated dependencies [[`0c52143`](https://github.com/quasarwork/gear/commit/0c5214343e6e246be08e573970c805064a82dead)]:
+  - @quasarwork/gear-tsconfig@1.0.0
+  - @quasarwork/gear-prettier-config@1.0.0
+
 ## 0.2.3
 
 ### Patch Changes
