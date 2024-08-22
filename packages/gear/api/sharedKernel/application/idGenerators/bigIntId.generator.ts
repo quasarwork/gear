@@ -1,6 +1,6 @@
 import { Context, Effect } from "effect";
 
-import type { BigIntId } from "#progLangExtensions/ts/effect/schemas/ids/bigIntId.schema";
+import type { BigIntId } from "#common/effect/schemas/ids/bigIntId.schema.js";
 import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error";
 
 export interface BigIntIdGenerator {

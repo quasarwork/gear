@@ -3,7 +3,7 @@ import { Layer } from "effect";
 import {
   Logger,
   LoggerMethod,
-} from "#server/sharedKernel/application/logger/logger";
+} from "#server/sharedKernel/application/logger/logger.js";
 
 const silentLoggerMethod: LoggerMethod = () => {
   // do nothing

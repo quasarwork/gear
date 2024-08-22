@@ -1,8 +1,8 @@
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { BigIntIdGeneratorSnowflake } from "#server/sharedKernel/infrastructure/idGenerators/bigIntId/snowflake/bigIntId.generator.snowflake";
+import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.js";
+import { BigIntIdGeneratorSnowflake } from "#server/sharedKernel/infrastructure/idGenerators/bigIntId/snowflake/bigIntId.generator.snowflake.js";
 
 describe("bigint id generator - snowflake", () => {
   const deps = BigIntIdGeneratorSnowflake;

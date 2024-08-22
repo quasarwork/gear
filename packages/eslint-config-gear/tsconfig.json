@@ -1,15 +1,3 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "types",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2022",
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["**/*.mjs"],
-  "exclude": ["node_modules"]
+  "extends": "@quasarwork/gear-tsconfig/tsconfig.server.json"
 }

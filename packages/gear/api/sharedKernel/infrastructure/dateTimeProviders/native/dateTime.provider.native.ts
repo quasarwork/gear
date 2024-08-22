@@ -1,10 +1,10 @@
 import { decodeSync } from "@effect/schema/ParseResult";
 import { Effect, Layer } from "effect";
 
-import { SafeDate } from "#progLangExtensions/ts/effect/schemas/date/safeDate.schema";
-import { errorEnsure } from "#progLangExtensions/ts/errors/error.fns";
-import { DateTimeProvider } from "#server/sharedKernel/application/dateTimeProviders/dateTime.provider";
-import { DateTimeProviderError } from "#server/sharedKernel/application/dateTimeProviders/dateTime.provider.error";
+import { SafeDate } from "#common/effect/schemas/date/safeDate.schema.js";
+import { errorEnsure } from "#common/errors/error.fns.js";
+import { DateTimeProviderError } from "#server/sharedKernel/application/dateTimeProviders/dateTime.provider.error.js";
+import { DateTimeProvider } from "#server/sharedKernel/application/dateTimeProviders/dateTime.provider.js";
 
 export const DateTimeProviderNative = Layer.succeed(
   DateTimeProvider,

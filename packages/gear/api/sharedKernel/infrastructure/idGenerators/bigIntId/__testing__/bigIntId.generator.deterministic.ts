@@ -1,9 +1,9 @@
 import { decodeUnknownSync } from "@effect/schema/ParseResult";
 import { Effect, Layer } from "effect";
 
-import { BigIntId } from "#progLangExtensions/ts/effect/schemas/ids/bigIntId.schema";
-import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error";
+import { BigIntId } from "#common/effect/schemas/ids/bigIntId.schema.js";
+import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error.js";
+import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.js";
 
 export const BigIntIdGeneratorDeterministic = () => {
   let inMemoryBigIntIds = new Set<BigIntId>();
