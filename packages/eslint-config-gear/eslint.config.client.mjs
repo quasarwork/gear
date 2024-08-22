@@ -52,6 +52,4 @@ const config = tseslint.config(
   },
 );
 
-console.log(config);
-
 export default config;
