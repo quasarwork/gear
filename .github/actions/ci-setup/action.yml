@@ -22,4 +22,5 @@ runs:
       run: yarn install --immutable
 
     - name: Build
+      shell: bash
       run: yarn build
