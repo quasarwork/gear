@@ -1,54 +1,27 @@
-import eslint from "@eslint/js";
+import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 import eslintPluginPrettier from "eslint-plugin-prettier";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
-  {
-    name: "Gear (base)",
-  },
-  eslint.configs.recommended,
+export default (
+  plugin: FlatConfig.Plugin,
+  parser: FlatConfig.Parser,
+): FlatConfig.ConfigArray => [
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
+    name: "@quasarwork/eslint-config-gear/base",
     languageOptions: {
-      ecmaVersion: 2022,
+      parser,
+      sourceType: "module",
       parserOptions: {
-        sourceType: "module",
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
       },
     },
-  },
-  {
     plugins: {
+      "@typescript-eslint": plugin,
       eslintPluginPrettier,
     },
-  },
-  {
-    files: [
-      "**/*.ts",
-      "**/*.tsx",
-      "**/*.js",
-      "**/*.jsx",
-      "**/*.mjs",
-      "**/*.cjs",
-    ],
-  },
-  {
-    ignores: [
-      "**/.*",
-      "**/.git/*",
-      "**/dist/*",
-      "**/.vscode/*",
-      "**/.svn/*",
-      "**/.hg/*",
-      "**/node_modules/*",
-      "**/.gadget/*",
-      "*.gadget.ts",
-      "**/types/*",
-    ],
-  },
-  {
     rules: {
       // disabled because effect-ts needs to be able extends schema interfaces
       // e.g. interface Foo extends Schema.Type<typeof Foo> {}
@@ -65,5 +38,20 @@ export default tseslint.config(
       // disabled because gadget.dev internal api return data of type any
       "@typescript-eslint/no-unsafe-assignment": "off",
     },
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+    ignores: [
+      "**/.*",
+      "**/.git/*",
+      "**/dist/*",
+      "**/build/*",
+      "**/.vscode/*",
+      "**/.idea/*",
+      "**/.svn/*",
+      "**/.hg/*",
+      "**/node_modules/*",
+      "**/.gadget/*",
+      "*.gadget.ts",
+      "**/types/*",
+    ],
   },
-);
+];

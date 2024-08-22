@@ -1,15 +1,25 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "types",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "target": "ES2022",
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declarationMap": true,
+    "lib": ["ES2022"],
+    "noImplicitReturns": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "types": ["node"]
   },
-  "include": ["**/*.mjs"],
-  "exclude": ["node_modules"]
+  "include": ["**/*.ts", "**/*.mjs"],
+  "exclude": ["node_modules", "dist"]
 }

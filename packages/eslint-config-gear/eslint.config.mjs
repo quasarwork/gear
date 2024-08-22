@@ -1,7 +1,18 @@
 import tseslint from "typescript-eslint";
 
-import eslintConfigGearBase from "./eslint.config.base.mjs";
-
-const config = tseslint.config(...eslintConfigGearBase);
+const config = tseslint.config(
+  ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: "./tsconfig.json",
+      },
+    },
+  },
+  {
+    ignores: ["**/dist/*"],
+  },
+);
 
 export default config;

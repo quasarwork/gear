@@ -1,4 +1,3 @@
-/* eslint-disable no-control-regex */
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
 import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema.js";

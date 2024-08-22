@@ -20,25 +20,24 @@
   },
   "type": "module",
   "exports": {
-    "./eslint.config.server.mjs": {
-      "types": "./types/eslint.config.server.d.mts",
-      "import": "./eslint.config.server.mjs"
+    ".": {
+      "types": "./dist/dts/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
     },
-    "./eslint.config.client.mjs": {
-      "types": "./types/eslint.config.client.d.mts",
-      "import": "./eslint.config.client.mjs"
-    },
-    "./eslint.config.extensions.mjs": {
-      "types": "./types/eslint.config.extensions.d.mts",
-      "import": "./eslint.config.extensions.mjs"
-    }
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "yarn types:generate",
+    "build": "yarn clean:dist && yarn build:esm && yarn build:annotate &&yarn build:cjs",
+    "build:annotate": "babel ./dist/esm --plugins annotate-pure-calls --out-dir ./dist/esm --source-maps",
+    "build:cjs": "babel ./dist/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir ./dist/cjs --source-maps",
+    "build:esm": "tsc -b ./tsconfig.build.json",
+    "clean:dist": "rimraf ./dist",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "tidy": "yarn format:write",
-    "types:generate": "tsc"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "tidy": "yarn lint:fix && yarn format:write"
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "dependencies": {
