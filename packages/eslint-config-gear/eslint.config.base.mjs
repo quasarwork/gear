@@ -1,6 +1,5 @@
 import eslint from "@eslint/js";
 import eslintPluginPrettier from "eslint-plugin-prettier";
-import globals from "globals";
 import tseslint from "typescript-eslint";
 
 export default tseslint.config(
@@ -12,13 +11,11 @@ export default tseslint.config(
   ...tseslint.configs.stylisticTypeChecked,
   {
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: 2022,
       parserOptions: {
         sourceType: "module",
         project: true,
-      },
-      globals: {
-        ...globals.node,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
   },
@@ -48,8 +45,6 @@ export default tseslint.config(
       "**/node_modules/*",
       "**/.gadget/*",
       "*.gadget.ts",
-      "**/web/*",
-      "**/extensions/*",
       "**/types/*",
     ],
   },
