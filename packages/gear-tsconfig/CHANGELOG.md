@@ -1,5 +1,14 @@
 # @quasarwork/gear-tsconfig
 
+## 1.0.1
+
+### Patch Changes
+
+- [#24](https://github.com/quasarwork/gear/pull/24) [`4931c7d`](https://github.com/quasarwork/gear/commit/4931c7dadf475d2535d25abddac1156110aaf6e3) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - reverted the major bump which happened for no reason &updated bundling + exports
+
+- Updated dependencies [[`4931c7d`](https://github.com/quasarwork/gear/commit/4931c7dadf475d2535d25abddac1156110aaf6e3)]:
+  - @quasarwork/gear-prettier-config@1.0.1
+
 ## 1.0.0
 
 ### Minor Changes
