@@ -1,5 +1,11 @@
 # @quasarwork/eslint-config-gear
 
+## 0.2.2
+
+### Patch Changes
+
+- [#18](https://github.com/quasarwork/gear/pull/18) [`03afadb`](https://github.com/quasarwork/gear/commit/03afadb2619ea3b92e750aa0dc74a6e45965c2d9) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - introduced a server config and quitted on exporting base config
+
 ## 0.2.1
 
 ### Patch Changes
