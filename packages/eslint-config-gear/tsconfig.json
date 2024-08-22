@@ -1,25 +1,3 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2022",
-    "strict": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "declarationMap": true,
-    "lib": ["ES2022"],
-    "noImplicitReturns": true,
-    "pretty": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "outDir": "dist",
-    "rootDir": ".",
-    "types": ["node"]
-  },
-  "include": ["**/*.ts", "**/*.mjs"],
-  "exclude": ["node_modules", "dist"]
+  "extends": "@quasarwork/gear-tsconfig/tsconfig.server.json"
 }

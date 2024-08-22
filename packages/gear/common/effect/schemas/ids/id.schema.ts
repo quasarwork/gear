@@ -1,6 +1,6 @@
 import { Schema, brand } from "@effect/schema/Schema";
 
-import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema.js";
+import { StringInRange1To254 } from "#common/effect/schemas/string/stringInRange1To254.schema.js";
 
 export const Id = StringInRange1To254.annotations({
   title: "Id",

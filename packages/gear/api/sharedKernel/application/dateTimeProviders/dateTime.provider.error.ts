@@ -1,5 +1,3 @@
-import { ErrorBase } from "#progLangExtensions/ts/effect/errors/errorBase";
+import { ErrorBase } from "#common/effect/errors/errorBase.js";
 
-export class DateTimeProviderError extends ErrorBase(
-  "DATE_TIME_PROVIDER_ERROR",
-) {}
+export class DateTimeProviderError extends ErrorBase("DateTimeProviderError") {}

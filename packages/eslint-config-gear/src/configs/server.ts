@@ -15,6 +15,8 @@ export default (
         ...globals.node,
       },
     },
-    ignores: ["**/web/*", "**/extensions/*"],
+  },
+  {
+    ignores: ["**/api/*", "**/web/*"],
   },
 ];

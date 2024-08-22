@@ -31,7 +31,7 @@
   },
   "prettier": "@quasarwork/gear-prettier-config",
   "scripts": {
-    "check-types": "turbo run check-types",
+    "types:check": "turbo run types:check",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "format:check": "turbo run format:check",

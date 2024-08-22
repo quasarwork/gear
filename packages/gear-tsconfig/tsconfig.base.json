@@ -18,22 +18,17 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "exactOptionalPropertyTypes": true,
-    "noEmit": true,
     "types": ["node"],
     "allowJs": true,
-    "checkJs": true,
     "baseUrl": "${configDir}",
     "rootDir": "${configDir}",
     "incremental": true,
     "resolveJsonModule": true,
-    "lib": ["ES2022"]
+    "lib": ["ES2022"],
+    "declarationMap": true,
+    "declaration": true
   },
-  "exclude": [
-    "**/node_modules",
-    "${configDir}/**/dist",
-    "${configDir}/**/build",
-    "*.gadget"
-  ],
+  "exclude": ["**/node_modules/*", "**/dist/*", "**/build/*", "*.gadget"],
   "include": [
     "${configDir}/**/*.ts",
     "${configDir}/**/*.tsx",

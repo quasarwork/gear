@@ -7,9 +7,16 @@
     "moduleResolution": "NodeNext",
     "target": "ES2022",
     "paths": {
-      "#progLangExtensions/*": ["${configDir}/progLangExtensions/*"],
+      "#common/*": ["${configDir}/common/*"],
       "#server/*": ["${configDir}/api/*"]
     }
   },
-  "exclude": ["${configDir}/web/*", "${configDir}/extensions/*"]
+  "exclude": [
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
+    "*.gadget",
+    "${configDir}/web/*",
+    "${configDir}/extensions/*"
+  ]
 }

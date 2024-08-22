@@ -1,10 +1,10 @@
 import { SnowflakeId } from "@akashrajpurohit/snowflake-id";
 import { Effect, Layer } from "effect";
 
-import { BigIntId } from "#progLangExtensions/ts/effect/schemas/ids/bigIntId.schema";
-import { errorEnsure } from "#progLangExtensions/ts/errors/error.fns";
-import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator";
-import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error";
+import { BigIntId } from "#common/effect/schemas/ids/bigIntId.schema.js";
+import { errorEnsure } from "#common/errors/error.fns.js";
+import { BigIntIdGeneratorError } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.error.js";
+import { BigIntIdGenerator } from "#server/sharedKernel/application/idGenerators/bigIntId.generator.js";
 
 export const BigIntIdGeneratorSnowflake = Layer.succeed(
   BigIntIdGenerator,
@@ -19,9 +19,8 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
           return BigIntId.make(nextId);
         },
         catch: (unknown) =>
-          new BigIntIdGeneratorError({
+          BigIntIdGeneratorError.fromUnknown(unknown, {
             message: "Failed to generate next bigint id.",
-            cause: errorEnsure(unknown),
           }),
       }),
     nextRange: (range) =>

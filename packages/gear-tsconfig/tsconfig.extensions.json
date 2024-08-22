@@ -14,5 +14,12 @@
       ".gadget/*": ["${configDir}/../.gadget/*"]
     }
   },
-  "exclude": ["${configDir}/../api/*", "${configDir}/../web/*"]
+  "exclude": [
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
+    "*.gadget",
+    "${configDir}/../api/*",
+    "${configDir}/../web/*"
+  ]
 }

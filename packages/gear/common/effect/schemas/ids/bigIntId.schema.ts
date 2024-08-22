@@ -1,6 +1,6 @@
 import { Schema, brand, compose, filter } from "@effect/schema/Schema";
 
-import { Id } from "#progLangExtensions/ts/effect/schemas/ids/id.schema";
+import { Id } from "#common/effect/schemas/ids/id.schema.js";
 
 import { StringFromNumber } from "../string/stringFromNumber.schema.js";
 

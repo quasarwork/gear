@@ -1,6 +1,6 @@
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { Id } from "#progLangExtensions/ts/effect/schemas/ids/id.schema.js";
+import { Id } from "#common/effect/schemas/ids/id.schema.js";
 
 export const isValidUuid = (uuid: string): boolean => {
   const UUID_REGEX =

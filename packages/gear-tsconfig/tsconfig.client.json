@@ -13,5 +13,12 @@
       "#client/*": ["${configDir}/*"]
     }
   },
-  "exclude": ["${configDir}/../api/*", "${configDir}/../extensions/*"]
+  "exclude": [
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
+    "*.gadget",
+    "${configDir}/../api/*",
+    "${configDir}/../extensions/*"
+  ]
 }

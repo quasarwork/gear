@@ -22,13 +22,12 @@ export default (
       },
     },
     plugins: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       eslintPluginReact,
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       eslintPluginReactHooks,
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       eslintPluginReactRefresh,
     },
+  },
+  {
     ignores: ["**/api/*", "**/extensions/*"],
   },
 ];

@@ -2,7 +2,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { StringInRange1To254 } from "#progLangExtensions/ts/effect/schemas/string/stringInRange1To254.schema.js";
+import { StringInRange1To254 } from "#common/effect/schemas/string/stringInRange1To254.schema.js";
 
 describe("string in range 1-254 schema", () => {
   it.effect("should accept strings within specified range", () =>

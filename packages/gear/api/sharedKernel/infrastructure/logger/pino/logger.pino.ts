@@ -4,7 +4,7 @@ import pino from "pino";
 import {
   Logger,
   type LoggerMethod,
-} from "#server/sharedKernel/application/logger/logger";
+} from "#server/sharedKernel/application/logger/logger.js";
 
 export type SupportedLogLevels = "debug" | "error" | "fatal" | "info" | "warn";
 
