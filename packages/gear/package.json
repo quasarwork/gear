@@ -30,6 +30,16 @@
       "types": "./dist/dts/index.d.ts",
       "import": "./dist/esm/index.js",
       "default": "./dist/cjs/index.js"
+    },
+    "./*": {
+      "types": "./dist/dts/*.d.ts",
+      "import": "./dist/esm/*.js",
+      "default": "./dist/cjs/*.js"
+    },
+    "./**/*": {
+      "types": "./dist/dts/**/*.d.ts",
+      "import": "./dist/esm/**/*.js",
+      "default": "./dist/cjs/**/*.js"
     }
   },
   "scripts": {
