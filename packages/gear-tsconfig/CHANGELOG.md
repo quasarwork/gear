@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 1.1.0
+
+### Minor Changes
+
+- [#30](https://github.com/quasarwork/gear/pull/30) [`917df26`](https://github.com/quasarwork/gear/commit/917df26e62bcb6f6b425e8b7ee602d1c974cf7e6) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - updated tsconfig & tsconfig build
+
 ## 1.0.1
 
 ### Patch Changes
