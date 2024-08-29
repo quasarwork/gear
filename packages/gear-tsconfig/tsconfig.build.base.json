@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "${configDir}/.tsbuildinfo/build.tsbuildinfo",
+    "outDir": "${configDir}/dist/esm",
+    "declarationDir": "${configDir}/dist/dts",
+    "noEmit": false,
+    "incremental": true,
+    "stripInternal": true,
+    "declarationMap": true,
+    "declaration": true
+  },
+  "exclude": [
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
+    "*.gadget",
+    "${configDir}/**/*.mjs"
+  ]
+}

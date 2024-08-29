@@ -22,11 +22,9 @@
     "allowJs": true,
     "baseUrl": "${configDir}",
     "rootDir": "${configDir}",
-    "incremental": true,
     "resolveJsonModule": true,
     "lib": ["ES2022"],
-    "declarationMap": true,
-    "declaration": true
+    "noEmit": true
   },
   "exclude": ["**/node_modules/*", "**/dist/*", "**/build/*", "*.gadget"],
   "include": [
