@@ -1,7 +1,7 @@
 import { Context, Effect } from "effect";
-import { PACKAGE_NAME } from "package.constants.js";
 
 import type { BigIntId } from "#common/ids/bigIntId/bigIntId.schema.js";
+import { PACKAGE_NAME } from "#common/package.constants.js";
 
 import { BigIntIdGeneratorError } from "./bigIntId.generator.error.js";
 

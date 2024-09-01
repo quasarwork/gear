@@ -21,7 +21,6 @@
   },
   "type": "module",
   "imports": {
-    "package.constants.js": "./package.constants.js",
     "#common/*": "./common/*",
     "#server/*": "./api/*"
   },

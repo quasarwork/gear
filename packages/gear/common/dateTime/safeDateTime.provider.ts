@@ -1,8 +1,8 @@
 import { Context, Effect } from "effect";
-import { PACKAGE_NAME } from "package.constants.js";
 
 import { SafeDateTimeProviderError } from "#common/dateTime/safeDateTime.provider.error.js";
 import type { SafeDateTime } from "#common/dateTime/safeDateTime.schema.js";
+import { PACKAGE_NAME } from "#common/package.constants.js";
 
 export interface SafeDateTimeProvider {
   readonly now: () => Effect.Effect<SafeDateTime, SafeDateTimeProviderError>;
