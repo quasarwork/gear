@@ -1,5 +1,5 @@
-import { PACKAGE_NAME } from "configs/package.constants.js";
 import { Context, Effect } from "effect";
+import { PACKAGE_NAME } from "package.constants.js";
 
 import { TransliteratorError } from "./transliterator.error.js";
 

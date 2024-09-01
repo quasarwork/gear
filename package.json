@@ -38,6 +38,7 @@
     "format:write": "turbo run format:write",
     "tidy": "turbo run tidy",
     "test": "turbo run test",
+    "test:ut": "turbo run test:ut",
     "build": "turbo run build",
     "changeset:publish": "yarn tidy && yarn changeset version && changeset publish"
   },

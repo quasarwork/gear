@@ -21,6 +21,7 @@
   },
   "type": "module",
   "imports": {
+    "package.constants.js": "./package.constants.js",
     "#common/*": "./common/*",
     "#server/*": "./api/*"
   },
@@ -33,13 +34,13 @@
     },
     "./*": {
       "types": "./dist/dts/*.d.ts",
-      "import": "./dist/esm/*.js",
-      "default": "./dist/cjs/*.js"
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
     },
     "./**/*": {
       "types": "./dist/dts/**/*.d.ts",
-      "import": "./dist/esm/**/*.js",
-      "default": "./dist/cjs/**/*.js"
+      "import": "./dist/esm/**/index.js",
+      "default": "./dist/cjs/**/index.js"
     }
   },
   "scripts": {

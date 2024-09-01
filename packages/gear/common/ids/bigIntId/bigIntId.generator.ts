@@ -1,5 +1,5 @@
-import { PACKAGE_NAME } from "configs/package.constants.js";
 import { Context, Effect } from "effect";
+import { PACKAGE_NAME } from "package.constants.js";
 
 import type { BigIntId } from "#common/ids/bigIntId/bigIntId.schema.js";
 
