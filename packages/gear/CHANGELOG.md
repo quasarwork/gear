@@ -1,5 +1,13 @@
 # @quasarwork/gear
 
+## 0.5.0
+
+### Minor Changes
+
+- [#32](https://github.com/quasarwork/gear/pull/32) [`30a1283`](https://github.com/quasarwork/gear/commit/30a1283bf4503c8f0bf9351d21d8d4ca5f75003b) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - configured husky, lint-staged, fixed package.json homepages
+
+- [#32](https://github.com/quasarwork/gear/pull/32) [`30a1283`](https://github.com/quasarwork/gear/commit/30a1283bf4503c8f0bf9351d21d8d4ca5f75003b) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - - removed shared kernel as it is more of a 'common' dir & added new schemas, functions, layers etc... (transliterator, ids, banking, dates, configs, errors, etc...)
+
 ## 0.4.0
 
 ### Minor Changes

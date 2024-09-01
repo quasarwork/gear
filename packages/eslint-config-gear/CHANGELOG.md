@@ -1,5 +1,11 @@
 # @quasarwork/eslint-config-gear
 
+## 1.0.2
+
+### Patch Changes
+
+- [#32](https://github.com/quasarwork/gear/pull/32) [`30a1283`](https://github.com/quasarwork/gear/commit/30a1283bf4503c8f0bf9351d21d8d4ca5f75003b) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - configured husky, lint-staged, fixed package.json homepages
+
 ## 1.0.1
 
 ### Patch Changes
