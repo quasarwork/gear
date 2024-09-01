@@ -5,7 +5,7 @@ import { Effect } from "effect";
 import { BigIntId } from "./bigIntId.schema.js";
 
 /**
- * @description Encodes a string to a BigIntId.
+ * Encodes a string to a BigIntId.
  *
  * Gadget currently only supports BigInt Ids.
  * This makes dealing with third-party APIs much harder when it comes to using their own IDs.

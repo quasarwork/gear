@@ -2,7 +2,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { StringFromNumberOrString } from "#common/string/stringFromNumberOrString.schema.js";
+import { StringFromNumberOrString } from "#common/string/schemas/stringFromNumberOrString.schema.js";
 
 describe("string from number schema", () => {
   it.effect("should accept strings or numbers and return a string", () =>

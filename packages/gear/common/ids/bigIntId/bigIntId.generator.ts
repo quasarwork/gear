@@ -13,5 +13,5 @@ export interface BigIntIdGenerator {
 }
 
 export const BigIntIdGenerator = Context.GenericTag<BigIntIdGenerator>(
-  `${PACKAGE_NAME}/sharedKernel/BigIntIdGenerator`,
+  `${PACKAGE_NAME}/common/BigIntIdGenerator`,
 );

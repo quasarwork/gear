@@ -1,6 +1,6 @@
 import { Int, Schema, brand, filter } from "@effect/schema/Schema";
 
-import { StringFromNumberOrString } from "#common/string/stringFromNumberOrString.schema.js";
+import { StringFromNumberOrString } from "#common/string/schemas/stringFromNumberOrString.schema.js";
 
 const hasValidMonetaryFormat = (value: string): boolean => {
   const SEPARATOR = ".";

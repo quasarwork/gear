@@ -1,6 +1,6 @@
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { BoundedString } from "#common/string/boundedString.schema.js";
+import { BoundedString } from "#common/string/schemas/boundedString.schema.js";
 
 const isStandardBICLength = (str: string) =>
   str.length === 8 || str.length === 11;

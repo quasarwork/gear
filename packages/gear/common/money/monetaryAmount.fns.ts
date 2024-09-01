@@ -7,7 +7,7 @@ import {
 } from "#common/money/monetaryAmount.schema.js";
 
 /**
- * @description Convert a monetary amount in cents to a monetary amount (number to string)
+ * Convert a monetary amount in cents to a monetary amount (number to string)
  *
  * @param amount
  *
@@ -28,7 +28,7 @@ export const monetaryAmountToCents = (amount: MonetaryAmount) =>
   });
 
 /**
- * @description Convert a monetary amount in cents to a monetary amount (number to string)
+ * Convert a monetary amount in cents to a monetary amount (number to string)
  *
  * @param amount
  *

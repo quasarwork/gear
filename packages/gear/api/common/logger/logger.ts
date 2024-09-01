@@ -15,5 +15,5 @@ export interface LoggerMethod {
 }
 
 export const Logger = Context.GenericTag<Logger>(
-  `${PACKAGE_NAME}/sharedKernel/Logger`,
+  `${PACKAGE_NAME}/api/common/Logger`,
 );

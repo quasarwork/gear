@@ -3,7 +3,7 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
-import { BoundedString } from "#common/string/boundedString.schema.js";
+import { BoundedString } from "#common/string/schemas/boundedString.schema.js";
 
 describe("bounded string schema", () => {
   it.effect("should accept strings within specified range", () =>

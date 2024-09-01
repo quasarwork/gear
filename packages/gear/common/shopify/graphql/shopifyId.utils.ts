@@ -1,9 +1,9 @@
 /**
- * @description Converts a legacy ID to a GraphQL ID
+ * Converts a legacy ID to a GraphQL ID
  *
  * @param resource - The capitalized Shopify resource type (e.g. "Product")
  * @param legacyId - The legacy ID
- * @returns - The GraphQL ID
+ * @returns The GraphQL ID
  *
  * @example
  *
@@ -21,10 +21,10 @@ export const legacyIdToGraphQLId = (resource: string, legacyId: string) => {
 };
 
 /**
- * @description Converts a GraphQL ID to a legacy ID
+ * Converts a GraphQL ID to a legacy ID
  *
  * @param graphqlId - Expects a GraphQL ID in the format `gid://shopify/{resource}/{legacyId}`
- * @returns - The legacy ID
+ * @returns The legacy ID
  *
  * @example
  *

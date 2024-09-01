@@ -23,5 +23,5 @@ export interface SafeDateTimeProvider {
 }
 
 export const SafeDateTimeProvider = Context.GenericTag<SafeDateTimeProvider>(
-  `${PACKAGE_NAME}/sharedKernel/SafeDateTimeProvider`,
+  `${PACKAGE_NAME}/common/SafeDateTimeProvider`,
 );

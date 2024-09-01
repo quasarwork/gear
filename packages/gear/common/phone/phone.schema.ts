@@ -1,6 +1,6 @@
 import { Schema, brand, filter } from "@effect/schema/Schema";
 
-import { StringInRange1To254 } from "#common/string/stringInRange1To254.schema.js";
+import { StringInRange1To254 } from "#common/string/schemas/stringInRange1To254.schema.js";
 
 /**
  * Implements fast shallow verification of phone numbers.

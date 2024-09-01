@@ -1,7 +1,7 @@
 import { Schema, brand, compose, filter } from "@effect/schema/Schema";
 
 import { Id } from "#common/ids/id.schema.js";
-import { StringFromNumberOrString } from "#common/string/stringFromNumberOrString.schema.js";
+import { StringFromNumberOrString } from "#common/string/schemas/stringFromNumberOrString.schema.js";
 
 const isValidBigIntId = (id: string | number): boolean => {
   // Gadget DB only supports big init ids with up to 19 digits
