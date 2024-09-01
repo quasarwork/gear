@@ -5,7 +5,7 @@ import { SafeDateTimeProviderNative } from "#common/dateTime/native/safeDateTime
 
 import { SafeDateTimeProvider } from "../safeDateTime.provider.js";
 
-describe("date time provider", () => {
+describe("safe date time provider - native", () => {
   const deps = SafeDateTimeProviderNative;
 
   const dateOfNow = new Date();

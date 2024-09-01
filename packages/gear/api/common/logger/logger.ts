@@ -1,5 +1,6 @@
 import { Context } from "effect";
-import { PACKAGE_NAME } from "package.constants.js";
+
+import { PACKAGE_NAME } from "#common/configs/package.constants.js";
 
 export interface Logger {
   readonly debug: LoggerMethod;
