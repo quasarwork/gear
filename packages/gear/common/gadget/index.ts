@@ -1,4 +1,4 @@
 /**
- * @since 0.5.0
+ * @since 0.5.1
  */
-export * from "./jsonProperty.parser.js";
+export { jsonPropertyToObjectOrNullUnsafe } from "./jsonProperty.parser.js";

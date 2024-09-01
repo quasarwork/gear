@@ -13,6 +13,6 @@ export * from "./bigIntId/__testing__/bigIntId.generator.deterministic.js";
 export * from "./bigIntId/snowflake/bigIntId.generator.snowflake.js";
 
 /**
- * @since 0.5.0
+ * @since 0.5.1
  */
-export * from "./uuid/uuid.schema.js";
+export { Uuid } from "./uuid/uuid.schema.js";

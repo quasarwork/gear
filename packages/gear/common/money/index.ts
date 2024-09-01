@@ -1,7 +1,7 @@
 /**
- * @since 0.5.0
+ * @since 0.5.1
  */
-export * from "./monetaryAmount.fns.test.js";
+export * from "./monetaryAmount.fns.js";
 export * from "./monetaryAmount.schema.js";
 
 /**
