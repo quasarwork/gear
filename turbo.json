@@ -22,6 +22,9 @@
     "test": {
       "cache": false
     },
+    "test:ut": {
+      "cache": false
+    },
     "build": {
       "cache": false
     }

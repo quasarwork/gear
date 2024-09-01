@@ -9,10 +9,10 @@
     "quasarwork",
     "gear"
   ],
+  "homepage": "https://github.com/quasarwork/gear/packages/gear",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quasarwork/gear.git",
-    "directory": "packages/gear"
+    "url": "git+https://github.com/quasarwork/gear.git"
   },
   "license": "MIT",
   "author": {
@@ -33,13 +33,13 @@
     },
     "./*": {
       "types": "./dist/dts/*.d.ts",
-      "import": "./dist/esm/*.js",
-      "default": "./dist/cjs/*.js"
+      "import": "./dist/esm/index.js",
+      "default": "./dist/cjs/index.js"
     },
     "./**/*": {
       "types": "./dist/dts/**/*.d.ts",
-      "import": "./dist/esm/**/*.js",
-      "default": "./dist/cjs/**/*.js"
+      "import": "./dist/esm/**/index.js",
+      "default": "./dist/cjs/**/index.js"
     }
   },
   "scripts": {
@@ -52,6 +52,7 @@
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "test": "yarn test:ut && yarn test:it",
     "test:it": "vitest .it-test.ts",
     "test:ut": "vitest .test.ts",
     "tidy": "yarn types:check && yarn lint:fix && yarn format:write",
@@ -62,7 +63,8 @@
     "@akashrajpurohit/snowflake-id": "^2.0.0",
     "@effect/schema": "^0.71.0",
     "effect": "^3.6.4",
-    "pino": "^9.3.2"
+    "pino": "^9.3.2",
+    "transliteration": "^2.3.5"
   },
   "devDependencies": {
     "@effect/vitest": "^0.8.5",

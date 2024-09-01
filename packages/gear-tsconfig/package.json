@@ -8,10 +8,10 @@
     "quasarwork",
     "gear"
   ],
+  "homepage": "https://github.com/quasarwork/gear/packages/gear-tsconfig",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quasarwork/gear.git",
-    "directory": "packages/gear-tsconfig"
+    "url": "GIT+https://github.com/quasarwork/gear.git"
   },
   "license": "MIT",
   "author": {
