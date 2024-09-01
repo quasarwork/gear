@@ -7,10 +7,10 @@
     "quasarwork",
     "gear"
   ],
+  "homepage": "https://github.com/quasarwork/gear/packages/gear-prettier-config",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quasarwork/gear.git",
-    "directory": "packages/gear-prettier-config"
+    "url": "GIT+https://github.com/quasarwork/gear.git"
   },
   "license": "MIT",
   "author": {
