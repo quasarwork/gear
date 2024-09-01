@@ -1,6 +1,6 @@
+import { PACKAGE_NAME } from "configs/package.constants.js";
 import { Context, Effect } from "effect";
 
-import { PACKAGE_NAME } from "#common/configs/package.constants.js";
 import { SafeDateTimeProviderError } from "#common/dateTime/safeDateTime.provider.error.js";
 import type { SafeDateTime } from "#common/dateTime/safeDateTime.schema.js";
 
