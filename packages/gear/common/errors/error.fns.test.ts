@@ -1,11 +1,12 @@
+import { describe, expect, it } from "vitest";
+
 import {
   DEFAULT_ERROR_MESSAGE,
   DEFAULT_ERROR_NAME,
   DEFAULT_ERROR_STACK,
-} from "common/errors/error.constants.js";
-import { errorEnsure } from "common/errors/error.fns.js";
-import { FromUnknownThrownError } from "common/errors/fromUnknownThrownError.js";
-import { describe, expect, it } from "vitest";
+} from "./error.constants.js";
+import { errorEnsure } from "./error.fns.js";
+import { FromUnknownThrownError } from "./fromUnknownThrownError.js";
 
 describe("errorEnsure", () => {
   describe("given an unknown thrown value", () => {

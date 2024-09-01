@@ -1,7 +1,8 @@
 import { Cause, Types } from "effect";
 
-import { DEFAULT_ERROR_MESSAGE } from "#common/errors/error.constants.js";
 import { errorEnsure } from "#common/errors/error.fns.js";
+
+import { DEFAULT_ERROR_MESSAGE } from "./error.constants.js";
 
 // This should be the right way, however there is definitely an issue with Typescript on that one
 // See various GitHub and StackOverflow issues for:

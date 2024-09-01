@@ -52,8 +52,8 @@
     "format:write": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "test:it": "vitest .it-test.ts",
     "test:ut": "vitest .test.ts",
+    "test": "yarn test:ut",
     "tidy": "yarn types:check && yarn lint:fix && yarn format:write",
     "types:check": "tsc --noEmit"
   },
