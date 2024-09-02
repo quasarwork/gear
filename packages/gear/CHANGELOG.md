@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.1
+
+### Patch Changes
+
+- [`73dcb0d`](https://github.com/quasarwork/gear/commit/73dcb0d9d20a59428c74598855b096b13211b618) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed indexes exports
+
 ## 0.5.0
 
 ### Minor Changes
