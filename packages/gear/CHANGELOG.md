@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.2
+
+### Patch Changes
+
+- [#38](https://github.com/quasarwork/gear/pull/38) [`2795354`](https://github.com/quasarwork/gear/commit/279535430ac6df78dbbb66ebafb0b9ca0a540552) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed safedatetime exports
+
 ## 0.5.1
 
 ### Patch Changes
