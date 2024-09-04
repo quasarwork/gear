@@ -663,10 +663,10 @@
     "@types/conventional-commits-parser" "^5.0.0"
     chalk "^5.3.0"
 
-"@effect/schema@^0.71.0":
-  version "0.71.1"
-  resolved "https://registry.yarnpkg.com/@effect/schema/-/schema-0.71.1.tgz#4d344b3c44b2490fb6d6698439956a25ae18ea0f"
-  integrity sha512-XvFttkuBUL3s4ofZ+OVE4Pagb4wsPG8laSS8iO5lVI9Yt1zIM49uxlYIA2BJ45jjS3MdplUepC0NilotKnjU2A==
+"@effect/schema@^0.72.0":
+  version "0.72.0"
+  resolved "https://registry.yarnpkg.com/@effect/schema/-/schema-0.72.0.tgz#c4fb296166046809b7a1800e6d5f0caa7e56c35b"
+  integrity sha512-I25wIy0Njx+002lmXk8xqcdFGMGkScl6EfxRE0nkoyecQVg+v1mw7DHkSwzR6CcL4s2tITwM3Z40ALJjArPqgA==
   dependencies:
     fast-check "^3.21.0"
 
@@ -1116,10 +1116,10 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.34.tgz#10964ba0dee6ac4cd462e2795b6bebd407303433"
   integrity sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==
 
-"@types/node@*":
-  version "22.5.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.2.tgz#e42344429702e69e28c839a7e16a8262a8086793"
-  integrity sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==
+"@types/node@*", "@types/node@^22.5.3":
+  version "22.5.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.3.tgz#91a374e42c6e7ccb5893a87f1775f36ce1671d65"
+  integrity sha512-njripolh85IA9SQGTAqbmnNZTdxv7X/4OYGPz8tgy5JDr8MP+uDBa921GpYEoDDnwm0Hmn5ZPeJgiiSTPoOzkQ==
   dependencies:
     undici-types "~6.19.2"
 
@@ -1127,13 +1127,6 @@
   version "12.20.55"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.55.tgz#c329cbd434c42164f846b909bd6f85b5537f6240"
   integrity sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==
-
-"@types/node@^22.4.1":
-  version "22.5.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.5.0.tgz#10f01fe9465166b4cab72e75f60d8b99d019f958"
-  integrity sha512-DkFrJOe+rfdHTqqMg0bSNlGlQ85hSoh2TPzZyhHsXnMtligRWpxUySiyw8FY14ITt24HVCiQPWxS3KO/QlGmWg==
-  dependencies:
-    undici-types "~6.19.2"
 
 "@types/semver@^7.5.0":
   version "7.5.8"
@@ -1952,10 +1945,10 @@ eastasianwidth@^0.2.0:
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
-effect@^3.6.4:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/effect/-/effect-3.6.5.tgz#be177847e69273ea9ed95bebe03bd672c5af474b"
-  integrity sha512-NhopZTAKljaAlR0CEroOAJJngdqg7bzlnWcDrCwh4d2WNVohVbBtUS4SGqLt8tUy7IFsTWATYiUtmhDG+YELjA==
+effect@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/effect/-/effect-3.7.0.tgz#67b47a8584cf23db826a1bda204f54747df38cd2"
+  integrity sha512-TXrb4SHTHrij396NfvGgpOD/5Sh503LtN2AeskkB7YO6Oe1tWSekk8dcrj3AWbMDOJ/fXOvcf6HD+Svus2zIeA==
 
 electron-to-chromium@^1.5.4:
   version "1.5.13"
