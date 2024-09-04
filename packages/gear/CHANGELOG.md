@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.5
+
+### Patch Changes
+
+- [#46](https://github.com/quasarwork/gear/pull/46) [`c0b104f`](https://github.com/quasarwork/gear/commit/c0b104fac33f960525a23790c371712216e9dba3) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed package props
+
 ## 0.5.4
 
 ### Patch Changes
