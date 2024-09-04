@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.4
+
+### Patch Changes
+
+- [#44](https://github.com/quasarwork/gear/pull/44) [`682f6a5`](https://github.com/quasarwork/gear/commit/682f6a5cbc52bf77daafcb45e7734c6b7ef34a53) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed JsonValue export
+
 ## 0.5.3
 
 ### Patch Changes
