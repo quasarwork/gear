@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.3
+
+### Patch Changes
+
+- [#41](https://github.com/quasarwork/gear/pull/41) [`5b27304`](https://github.com/quasarwork/gear/commit/5b27304a574e9598ae25b97597613fd87eecd454) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed missing export of MyshopifyDomain schema type
+
 ## 0.5.2
 
 ### Patch Changes
