@@ -1,4 +1,4 @@
-import { brand, filter } from "@effect/schema/Schema";
+import { Schema, brand, filter } from "@effect/schema/Schema";
 
 import { Hostname } from "#common/http/hostname.schema.js";
 
@@ -13,3 +13,4 @@ export const MyshopifyDomain = Hostname.annotations({
   filter((hostname) => SHOPIFY_SHOP_FORMAT_NO_PROTOCOL.test(hostname)),
   brand("MyshopifyDomain"),
 );
+export type MyshopifyDomain = Schema.Type<typeof MyshopifyDomain>;
