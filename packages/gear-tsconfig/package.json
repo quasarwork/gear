@@ -8,10 +8,11 @@
     "quasarwork",
     "gear"
   ],
-  "homepage": "https://github.com/quasarwork/gear/packages/gear-tsconfig",
+  "homepage": "https://github.com/quasarwork/gear/tree/main/packages/gear-tsconfig",
   "repository": {
     "type": "git",
-    "url": "GIT+https://github.com/quasarwork/gear.git"
+    "url": "git+https://github.com/quasarwork/gear.git",
+    "directory": "packages/gear-tsconfig"
   },
   "license": "MIT",
   "author": {
@@ -24,6 +25,15 @@
     "./tsconfig.client.json": "./tsconfig.client.json",
     "./tsconfig.extensions.json": "./tsconfig.extensions.json"
   },
+  "files": [
+    "tsconfig.build.base.json",
+    "tsconfig.server.json",
+    "tsconfig.client.json",
+    "tsconfig.extensions.json",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",

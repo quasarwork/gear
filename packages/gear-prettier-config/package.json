@@ -7,10 +7,11 @@
     "quasarwork",
     "gear"
   ],
-  "homepage": "https://github.com/quasarwork/gear/packages/gear-prettier-config",
+  "homepage": "https://github.com/quasarwork/gear/tree/main/packages/gear-prettier-config",
   "repository": {
     "type": "git",
-    "url": "GIT+https://github.com/quasarwork/gear.git"
+    "url": "git+https://github.com/quasarwork/gear.git",
+    "directory": "packages/gear-prettier-config"
   },
   "license": "MIT",
   "author": {
@@ -20,6 +21,12 @@
   "exports": {
     ".": "./prettier.config.mjs"
   },
+  "files": [
+    "prettier.config.mjs",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "format:check": "prettier --check --config prettier.config.mjs .",
     "format:write": "prettier --write --config prettier.config.mjs .",
