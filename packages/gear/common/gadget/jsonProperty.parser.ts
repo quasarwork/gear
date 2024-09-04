@@ -6,7 +6,7 @@ export type JsonPrimitive = string | number | boolean | null;
 export type JsonValue = JsonPrimitive | JsonObject | JsonArray;
 
 /**
- * Gadget allows use to configure a model property (PGSQL database) as a JSON property.
+ * Gadget allows us to configure a model property (PGSQL database) as a JSON property.
  *
  * However, it does not support yet configuring a JSON Schema to have a type-safe output when using the
  * automatically generated JS client.
