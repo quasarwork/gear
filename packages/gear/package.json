@@ -40,12 +40,6 @@
       "default": "./dist/cjs/*/index.js"
     }
   },
-  "files": [
-    "dist",
-    "package.json",
-    "README.md",
-    "LICENSE"
-  ],
   "scripts": {
     "build": "yarn clean:dist && yarn build:esm && yarn build:annotate && yarn build:cjs ",
     "build:annotate": "babel ./dist/esm --plugins annotate-pure-calls --out-dir ./dist/esm --source-maps",
@@ -63,23 +57,6 @@
     "types:check": "tsc --noEmit"
   },
   "prettier": "@quasarwork/gear-prettier-config",
-  "devDependencies": {
-    "@akashrajpurohit/snowflake-id": "^2.0.0",
-    "@effect/schema": "^0.72.0",
-    "@effect/vitest": "^0.8.5",
-    "@quasarwork/eslint-config-gear": "*",
-    "@quasarwork/gear-prettier-config": "*",
-    "@quasarwork/gear-tsconfig": "*",
-    "effect": "^3.7.0",
-    "eslint": "^9.9.1",
-    "pino": "^9.3.2",
-    "prettier": "^3.3.3",
-    "transliteration": "^2.3.5",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.1",
-    "vitest": "^2.0.5"
-  },
   "peerDependencies": {
     "@akashrajpurohit/snowflake-id": "^2.0.0",
     "@effect/schema": "^0.72.0",
