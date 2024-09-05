@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.7.0
+
+### Minor Changes
+
+- [`67c76cd`](https://github.com/quasarwork/gear/commit/67c76cd24712949b4bed44446dd94ce668aaadba) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - changed export again
+
 ## 0.6.0
 
 ### Minor Changes
