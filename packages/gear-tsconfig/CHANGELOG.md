@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 1.3.0
+
+### Minor Changes
+
+- [`67c76cd`](https://github.com/quasarwork/gear/commit/67c76cd24712949b4bed44446dd94ce668aaadba) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - changed export again
+
 ## 1.2.0
 
 ### Minor Changes
