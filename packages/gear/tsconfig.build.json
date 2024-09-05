@@ -2,5 +2,6 @@
   "extends": "@quasarwork/gear-tsconfig/tsconfig.build.base.json",
   "compilerOptions": {
     "customConditions": ["production"]
-  }
+  },
+  "exclude": ["**/*.test.ts"]
 }
