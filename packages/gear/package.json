@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/gear",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Gear is a toolbox helping you to build Shopify apps with the Gadget platform.",
   "keywords": [
     "gadget",

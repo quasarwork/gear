@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.5.6
+
+### Patch Changes
+
+- [#48](https://github.com/quasarwork/gear/pull/48) [`3e5b621`](https://github.com/quasarwork/gear/commit/3e5b6219a5ae7b4def3f9dfe22a43b38e381e7d9) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed exports & fixed subpath imports configuration
+
 ## 0.5.5
 
 ### Patch Changes
