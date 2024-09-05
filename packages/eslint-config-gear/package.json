@@ -29,6 +29,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "attw:pack": "attw --pack .",
     "build": "yarn clean:dist && yarn build:esm && yarn build:annotate && yarn build:cjs",
     "build:annotate": "babel ./dist/esm --plugins annotate-pure-calls --out-dir ./dist/esm --source-maps",
     "build:cjs": "babel ./dist/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir ./dist/cjs --source-maps",

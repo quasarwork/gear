@@ -27,6 +27,9 @@
     },
     "build": {
       "cache": false
+    },
+    "attw:pack": {
+      "cache": false
     }
   }
 }

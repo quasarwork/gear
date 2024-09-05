@@ -22,6 +22,7 @@
     ".": "./prettier.config.mjs"
   },
   "scripts": {
+    "attw:pack": "attw --pack .",
     "format:check": "prettier --check --config prettier.config.mjs .",
     "format:write": "prettier --write --config prettier.config.mjs .",
     "tidy": "yarn format:write"

@@ -18,6 +18,7 @@
     "packages/*"
   ],
   "scripts": {
+    "attw:pack": "turbo attw",
     "build": "turbo run build",
     "changeset:publish": "yarn tidy && yarn changeset version && changeset publish",
     "format:check": "turbo run format:check",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@akashrajpurohit/snowflake-id": "^2.0.0",
+    "@arethetypeswrong/cli": "^0.15.4",
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-export-namespace-from": "^7.24.7",
