@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 1.2.0
+
+### Minor Changes
+
+- [#50](https://github.com/quasarwork/gear/pull/50) [`d5cc2a2`](https://github.com/quasarwork/gear/commit/d5cc2a2b8867ffc328e25f27a290c452d87375dd) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - changed the way dependencies are managed
+
 ## 1.1.3
 
 ### Patch Changes
