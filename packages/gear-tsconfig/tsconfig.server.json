@@ -5,11 +5,7 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "target": "ES2022",
-    "paths": {
-      "#common/*": ["${configDir}/common/*"],
-      "#server/*": ["${configDir}/api/*"]
-    }
+    "target": "ES2022"
   },
   "exclude": [
     "**/node_modules/*",

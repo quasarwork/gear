@@ -8,11 +8,7 @@
     "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "lib": ["es2015", "dom"],
-    "types": ["@shopify/app-bridge-types", "vite/client"],
-    "paths": {
-      "#extensions/*": ["${configDir}/*"],
-      ".gadget/*": ["${configDir}/../.gadget/*"]
-    }
+    "types": ["@shopify/app-bridge-types", "vite/client"]
   },
   "exclude": [
     "**/node_modules/*",
