@@ -63,6 +63,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "directory": "dist"
+    "directory": "dist",
+    "provenance": true
   }
 }
