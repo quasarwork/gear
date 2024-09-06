@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/gear-tsconfig",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Opinionated TypeScript configuration for Quasar.work's Gear projects",
   "keywords": [
     "typescript",
@@ -15,25 +15,39 @@
     "directory": "packages/gear-tsconfig"
   },
   "license": "MIT",
-  "author": {
-    "name": "Aurélien BOBENRIETH",
-    "url": "https://quasar.work"
-  },
-  "exports": {
-    "./tsconfig.base.json": "./tsconfig.base.json",
-    "./tsconfig.build.base.json": "./tsconfig.build.base.json",
-    "./tsconfig.server.json": "./tsconfig.server.json",
-    "./tsconfig.client.json": "./tsconfig.client.json",
-    "./tsconfig.extensions.json": "./tsconfig.extensions.json"
-  },
+  "author": "Aurélien BOBENRIETH (Quasar.work)",
+  "contributors": [
+    {
+      "name": "Aurélien BOBENRIETH",
+      "url": "https://github.com/aurelienbobenrieth"
+    }
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "tsconfig.base.json",
+    "tsconfig.build.base.json",
+    "tsconfig.client.json",
+    "tsconfig.server.json",
+    "tsconfig.extensions.json"
+  ],
   "scripts": {
     "attw:pack": "attw --pack .",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "tidy": "yarn format:write"
+    "tidy": "pnpm format:write"
   },
   "prettier": "@quasarwork/gear-prettier-config",
+  "devDependencies": {
+    "@quasarwork/gear-prettier-config": "workspace:*",
+    "@shopify/app-bridge-types": "^0.0.14",
+    "@types/node": "^22.5.3",
+    "typescript": ">=5.0.0"
+  },
   "peerDependencies": {
+    "@shopify/app-bridge-types": "^0.0.14",
+    "@types/node": "^22.5.3",
     "typescript": ">=5.0.0"
   },
   "publishConfig": {

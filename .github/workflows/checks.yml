@@ -19,7 +19,7 @@ jobs:
       - name: CI Setup
         uses: ./.github/actions/ci-setup
 
-      - run: yarn types:check
+      - run: pnpm types:check
 
   lint:
     name: Lint
@@ -31,7 +31,7 @@ jobs:
       - name: CI Setup
         uses: ./.github/actions/ci-setup
 
-      - run: yarn lint
+      - run: pnpm lint
 
   format:
     name: Format
@@ -43,7 +43,7 @@ jobs:
       - name: CI Setup
         uses: ./.github/actions/ci-setup
 
-      - run: yarn format:check
+      - run: pnpm format:check
 
   test:
     name: Test
@@ -56,4 +56,4 @@ jobs:
         uses: ./.github/actions/ci-setup
 
       - name: Run tests
-        run: yarn test
+        run: pnpm test

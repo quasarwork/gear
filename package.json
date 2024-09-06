@@ -1,6 +1,5 @@
 {
-  "name": "quasarwork-gear",
-  "version": "0.0.1",
+  "name": "@quasarwork/gear-project",
   "private": true,
   "description": "Gear project monorepo.",
   "homepage": "https://github.com/quasarwork/gear",
@@ -9,18 +8,18 @@
     "url": "git+https://github.com/quasarwork/gear"
   },
   "license": "MIT",
-  "author": {
-    "name": "Aurélien BOBENRIETH",
-    "url": "https://quasar.work"
-  },
-  "type": "module",
-  "workspaces": [
-    "packages/*"
+  "author": "Aurélien BOBENRIETH (Quasar.work)",
+  "contributors": [
+    {
+      "name": "Aurélien BOBENRIETH",
+      "url": "https://github.com/aurelienbobenrieth"
+    }
   ],
+  "type": "module",
   "scripts": {
-    "attw:pack": "turbo attw",
+    "attw:pack": "turbo attw:pack",
     "build": "turbo run build",
-    "changeset:publish": "yarn tidy && yarn changeset version && changeset publish",
+    "changeset:publish": "pnpm tidy && pnpm changeset version && changeset publish",
     "format:check": "turbo run format:check",
     "format:write": "turbo run format:write",
     "postinstall": "husky",
@@ -39,49 +38,30 @@
     ]
   },
   "prettier": "@quasarwork/gear-prettier-config",
-  "dependencies": {
-    "@changesets/cli": "^2.27.7"
-  },
   "devDependencies": {
-    "@akashrajpurohit/snowflake-id": "^2.0.0",
     "@arethetypeswrong/cli": "^0.15.4",
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/plugin-transform-export-namespace-from": "^7.24.7",
     "@babel/plugin-transform-modules-commonjs": "^7.24.8",
     "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.8",
     "@commitlint/cli": "^19.4.1",
-    "@effect/schema": "^0.72.0",
-    "@effect/vitest": "^0.8.5",
-    "@quasarwork/eslint-config-gear": "*",
-    "@quasarwork/gear-prettier-config": "*",
-    "@quasarwork/gear-tsconfig": "*",
-    "@shopify/app-bridge-types": "^0.0.14",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.5.3",
+    "@effect/build-utils": "^0.7.8",
+    "@quasarwork/gear-prettier-config": "workspace:*",
+    "@types/node": "^22.5.4",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "commitlint-config-gitmoji": "^2.3.1",
-    "effect": "^3.7.0",
-    "eslint": "^9.9.1",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
-    "pino": "^9.3.2",
     "pinst": "^3.0.0",
     "prettier": "^3.3.3",
-    "rimraf": "^6.0.1",
-    "transliteration": "^2.3.5",
-    "tsc-alias": "^1.8.10",
     "turbo": "^2.1.1",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.1",
+    "vite": "^5.4.3",
     "vitest": "^2.0.5"
   },
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": ">=16.0.0"
   }

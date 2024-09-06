@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/eslint-config-gear",
-  "version": "1.2.1",
+  "version": "1.2.5",
   "description": "Opinionated ESLint configuration for Quasar.work's Gear projects",
   "keywords": [
     "eslint",
@@ -11,52 +11,55 @@
   "homepage": "https://github.com/quasarwork/gear/tree/main/packages/eslint-config-gear",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarwork/gear.git",
-    "directory": "packages/eslint-co nfig-gear"
+    "url": "https://github.com/quasarwork/gear.git",
+    "directory": "packages/eslint-config-gear"
   },
   "license": "MIT",
-  "author": {
-    "name": "Aurélien BOBENRIETH",
-    "url": "https://quasar.work"
-  },
+  "author": "Aurélien BOBENRIETH (Quasar.work)",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/dts/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "default": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "attw:pack": "attw --pack .",
-    "build": "yarn clean:dist && yarn build:esm && yarn build:annotate && yarn build:cjs",
-    "build:annotate": "babel ./dist/esm --plugins annotate-pure-calls --out-dir ./dist/esm --source-maps",
-    "build:cjs": "babel ./dist/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir ./dist/cjs --source-maps",
-    "build:esm": "tsc -b ./tsconfig.build.json --force && tsc-alias -p tsconfig.build.json",
-    "clean:dist": "rimraf ./dist",
+    "build": "pnpm clean && pnpm build:esm && pnpm build:annotate && pnpm build:cjs && build-utils pack-v2",
+    "build:annotate": "babel ./build/esm --out-dir ./build/esm --source-maps --config-file ./babel.config-annotate.mjs",
+    "build:cjs": "babel ./build/esm --out-dir ./build/cjs --source-maps --config-file ./babel.config-cjs.mjs",
+    "build:esm": "tsc -b ./tsconfig.build.json --force",
+    "clean": "rimraf ./dist && rimraf ./build",
+    "codegen": "build-utils prepare-v2",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
     "lint:inspect:config": "eslint --inspect-config .",
-    "tidy": "yarn lint:fix && yarn format:write"
+    "tidy": "pnpm types:check && pnpm format:write",
+    "types:check": "tsc --noEmit --project ./tsconfig.json"
   },
   "prettier": "@quasarwork/gear-prettier-config",
-  "dependencies": {
+  "devDependencies": {
     "@eslint/js": "^9.9.0",
-    "globals": "^15.9.0"
-  },
-  "peerDependencies": {
+    "@quasarwork/gear-prettier-config": "workspace:*",
+    "@quasarwork/gear-tsconfig": "workspace:*",
     "eslint": ">= 9",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "typescript-eslint": "^8.3.0"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^9.9.0",
+    "eslint": ">= 9",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.3.0"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist",
+    "provenance": true
   }
 }

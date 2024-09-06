@@ -42,7 +42,12 @@
     "incremental": true,
     "removeComments": false
   },
-  "exclude": ["**/node_modules/*", "**/dist/*", "**/build/*", "*.gadget"],
+  "exclude": [
+    "${configDir}/node_modules/*",
+    "${configDir}/dist/*",
+    "${configDir}/build/*",
+    "*.gadget"
+  ],
   "include": [
     "${configDir}/**/*.ts",
     "${configDir}/**/*.tsx",

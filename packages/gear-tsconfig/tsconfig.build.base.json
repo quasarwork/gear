@@ -2,8 +2,8 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "${configDir}/.tsbuildinfo/build.tsbuildinfo",
-    "outDir": "${configDir}/dist/esm",
-    "declarationDir": "${configDir}/dist/dts",
+    "outDir": "${configDir}/build/esm",
+    "declarationDir": "${configDir}/build/dts",
     "noEmit": false,
     "incremental": true,
     "stripInternal": true,
@@ -11,13 +11,13 @@
     "declaration": true
   },
   "exclude": [
-    "**/node_modules/*",
-    "**/dist/*",
-    "**/build/*",
+    "${configDir}/node_modules/*",
+    "${configDir}/dist/*",
+    "${configDir}/build/*",
     "*.gadget",
     "${configDir}/**/*.mjs",
-    "**/*.test.ts",
-    "**/*.it-test.ts",
-    "**/*.e2e-test.ts"
+    "${configDir}/**/*.test.ts",
+    "${configDir}/**/*.it-test.ts",
+    "${configDir}/**/*.e2e-test.ts"
   ]
 }

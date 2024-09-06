@@ -1,5 +1,5 @@
 name: CI Setup
-description: Perform standard CI setup and install dependencies using Yarn.
+description: Perform standard CI setup and install dependencies using Pnpm.
 
 inputs:
   node-version:
@@ -19,8 +19,8 @@ runs:
 
     - name: Install dependencies
       shell: bash
-      run: yarn install --immutable
+      run: pnpm install --immutable
 
     - name: Build
       shell: bash
-      run: yarn build
+      run: pnpm build

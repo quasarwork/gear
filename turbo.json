@@ -29,7 +29,8 @@
       "cache": false
     },
     "attw:pack": {
-      "cache": false
+      "cache": false,
+      "dependsOn": ["build"]
     }
   }
 }
