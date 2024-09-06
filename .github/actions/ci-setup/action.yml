@@ -1,5 +1,5 @@
 name: CI Setup
-description: Perform standard CI setup and install dependencies using Yarn.
+description: Perform standard CI setup and install dependencies using Pnpm.
 
 inputs:
   node-version:
@@ -11,16 +11,19 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: ${{ inputs.node-version }}
-        cache: yarn
+        cache: pnpm
 
     - name: Install dependencies
       shell: bash
-      run: yarn install --immutable
+      run: pnpm install --frozen-lockfile
 
     - name: Build
       shell: bash
-      run: yarn build
+      run: pnpm build

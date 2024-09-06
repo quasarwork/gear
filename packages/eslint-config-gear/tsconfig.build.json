@@ -2,5 +2,12 @@
   "extends": "@quasarwork/gear-tsconfig/tsconfig.build.base.json",
   "compilerOptions": {
     "rootDir": "./src"
-  }
+  },
+  "exclude": [
+    "**/dist/*",
+    "**/build/*",
+    "eslint.config.mjs",
+    "babel.config-annotate.mjs",
+    "babel.config-cjs.mjs"
+  ]
 }

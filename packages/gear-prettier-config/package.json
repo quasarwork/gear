@@ -14,10 +14,13 @@
     "directory": "packages/gear-prettier-config"
   },
   "license": "MIT",
-  "author": {
-    "name": "Aurélien BOBENRIETH",
-    "url": "https://quasar.work"
-  },
+  "author": "Aurélien BOBENRIETH (Quasar.work)",
+  "contributors": [
+    {
+      "name": "Aurélien BOBENRIETH",
+      "url": "https://github.com/aurelienbobenrieth"
+    }
+  ],
   "exports": {
     ".": "./prettier.config.mjs"
   },
@@ -25,17 +28,17 @@
     "attw:pack": "attw --pack .",
     "format:check": "prettier --check --config prettier.config.mjs .",
     "format:write": "prettier --write --config prettier.config.mjs .",
-    "tidy": "yarn format:write"
+    "tidy": "pnpm format:write"
   },
   "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "prettier-plugin-jsdoc": "^1.3.0",
     "prettier-plugin-packagejson": "^2.5.2"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "prettier": "^3.3.3"
   },
-  "publishConfig": {
-    "access": "public"
+  "peerDependencies": {
+    "prettier": "^3.3.3"
   }
 }

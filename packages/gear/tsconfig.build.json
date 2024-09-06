@@ -1,7 +1,16 @@
 {
   "extends": "@quasarwork/gear-tsconfig/tsconfig.build.base.json",
   "compilerOptions": {
-    "customConditions": ["production"]
+    "customConditions": ["production"],
+    "rootDir": "./src"
   },
-  "exclude": ["**/*.test.ts"]
+  "exclude": [
+    "**/*.test.ts",
+    "**/*.it-test.ts",
+    "eslint.config.mjs",
+    "vite.config.base.ts",
+    "vite.config.ts",
+    "babel.config-annotate.mjs",
+    "babel.config-cjs.mjs"
+  ]
 }

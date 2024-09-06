@@ -19,8 +19,8 @@ jobs:
       - name: Create release pull request or publish to npm
         uses: changesets/action@v1
         with:
-          version: yarn changeset version
-          publish: yarn changeset publish
+          version: pnpm changeset version
+          publish: pnpm changeset publish
           commit: "🤖 🔖 version packages"
           title: "🤖 🔖 version packages"
         env:

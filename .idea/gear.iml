@@ -5,6 +5,13 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.turbo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/eslint-config-gear/.tsbuildinfo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/eslint-config-gear/build" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/eslint-config-gear/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/gear/.tsbuildinfo" />
+      <excludeFolder url="file://$MODULE_DIR$/packages/gear/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/templates/default/.gadget" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
