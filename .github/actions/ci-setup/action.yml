@@ -22,7 +22,7 @@ runs:
 
     - name: Install dependencies
       shell: bash
-      run: pnpm install --immutable
+      run: pnpm install --frozen-lockfile
 
     - name: Build
       shell: bash
