@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 1.5.2
+
+### Patch Changes
+
+- [`a85b87d`](https://github.com/quasarwork/gear/commit/a85b87d28812cd61fff307b85635719d3df84f51) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed tsconfig server
+
 ## 1.5.1
 
 ### Patch Changes
