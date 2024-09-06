@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/gear-prettier-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Opinionated Prettier configuration for Quasar.work's Gear projects",
   "keywords": [
     "prettier",
