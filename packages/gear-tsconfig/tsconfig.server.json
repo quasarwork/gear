@@ -3,7 +3,7 @@
   "display": "Gear (server)",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "CommonJS",
     "moduleResolution": "NodeNext",
     "target": "ES2022"
   },
