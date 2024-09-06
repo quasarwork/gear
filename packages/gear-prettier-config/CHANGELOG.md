@@ -1,5 +1,11 @@
 # @quasarwork/gear-prettier-config
 
+## 1.4.0
+
+### Minor Changes
+
+- [`550f83b`](https://github.com/quasarwork/gear/commit/550f83bd98357acb71783738ae93f7c4b3760bb4) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - forcing deploy
+
 ## 1.3.0
 
 ### Minor Changes

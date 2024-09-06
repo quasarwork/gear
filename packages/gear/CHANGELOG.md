@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.9.0
+
+### Minor Changes
+
+- [`550f83b`](https://github.com/quasarwork/gear/commit/550f83bd98357acb71783738ae93f7c4b3760bb4) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - forcing deploy
+
 ## 0.8.0
 
 ### Minor Changes
