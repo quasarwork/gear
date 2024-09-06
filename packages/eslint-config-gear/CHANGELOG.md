@@ -1,5 +1,11 @@
 # @quasarwork/eslint-config-gear
 
+## 1.4.1
+
+### Patch Changes
+
+- [`7ed72fb`](https://github.com/quasarwork/gear/commit/7ed72fb94d8e12a78f67dc25606dd1a4e37c3018) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed tsconfig
+
 ## 1.4.0
 
 ### Minor Changes
