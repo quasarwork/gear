@@ -1,5 +1,11 @@
 # @quasarwork/gear-tsconfig
 
+## 1.4.0
+
+### Minor Changes
+
+- [#54](https://github.com/quasarwork/gear/pull/54) [`abd9d34`](https://github.com/quasarwork/gear/commit/abd9d3410545fc4c273e83bc93dccdc85cab7aeb) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - passing attw
+
 ## 1.3.1
 
 ### Patch Changes
