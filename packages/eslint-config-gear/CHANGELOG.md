@@ -1,5 +1,11 @@
 # @quasarwork/eslint-config-gear
 
+## 1.5.1
+
+### Patch Changes
+
+- [`cb475c2`](https://github.com/quasarwork/gear/commit/cb475c2bda8a50ddc3a524d171a06d85b4d48837) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed dependency
+
 ## 1.5.0
 
 ### Minor Changes
