@@ -1,4 +1,4 @@
-import { Schema, brand, filter } from "@effect/schema/Schema";
+import { brand, filter, Schema } from "@effect/schema/Schema";
 
 import { Id } from "../id.schema.js";
 
@@ -10,9 +10,9 @@ export const isValidUuid = (uuid: string): boolean => {
 };
 
 export const Uuid = Id.annotations({
-  identifier: "Uuid",
-  title: "Uuid",
   description:
     "A shallow verification matching Uuid versions form 1 to 5 and variants (8, 9, a, b)",
+  identifier: "Uuid",
+  title: "Uuid",
 }).pipe(filter(isValidUuid), brand("Uuid"));
 export type Uuid = Schema.Type<typeof Uuid>;

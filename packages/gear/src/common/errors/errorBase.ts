@@ -40,22 +40,22 @@ import { errorEnsure } from "./error.fns.js";
 export const ErrorBase = <Tag extends string>(
   tag: Tag,
 ): {
-  new <A extends Record<string, unknown> = Record<string, unknown>>(
-    args?: {
-      message?: string;
-      cause?: Error["cause"];
-      metadata?: Record<string, unknown>;
-    } & (Types.Equals<A, Record<string, unknown>> extends true
-      ? unknown
-      : { readonly [P in keyof A as P extends "_tag" ? never : P]: A[P] }),
-  ): Cause.YieldableError & { readonly _tag: Tag } & Readonly<A>;
   fromUnknown<A extends Record<string, unknown> = Record<string, unknown>>(
     unknown: unknown,
     options?: {
       message?: string;
       metadata?: Record<string, unknown>;
     },
-  ): Cause.YieldableError & { readonly _tag: Tag } & Readonly<A>;
+  ): { readonly _tag: Tag } & Cause.YieldableError & Readonly<A>;
+  new <A extends Record<string, unknown> = Record<string, unknown>>(
+    args?: {
+      cause?: Error["cause"];
+      message?: string;
+      metadata?: Record<string, unknown>;
+    } & (Types.Equals<A, Record<string, unknown>> extends true
+      ? unknown
+      : { readonly [P in keyof A as P extends "_tag" ? never : P]: A[P] }),
+  ): { readonly _tag: Tag } & Cause.YieldableError & Readonly<A>;
 } => {
   // @ts-expect-error TS2420: Class Base incorrectly implements interface YieldableError
   class Base extends Error implements Cause.YieldableError {
@@ -63,8 +63,8 @@ export const ErrorBase = <Tag extends string>(
 
     constructor(
       args: {
-        message?: string;
         cause?: Error["cause"];
+        message?: string;
         metadata?: Record<string, unknown>;
       } = {},
     ) {
@@ -82,8 +82,8 @@ export const ErrorBase = <Tag extends string>(
     ) {
       const error = errorEnsure(unknown);
       return new Base({
-        message: options.message ?? DEFAULT_ERROR_MESSAGE,
         cause: error,
+        message: options.message ?? DEFAULT_ERROR_MESSAGE,
         metadata: options.metadata ?? {},
       });
     }

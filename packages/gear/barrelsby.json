@@ -1,0 +1,7 @@
+{
+  "directory": "./src",
+  "delete": true,
+  "exclude": [".test.ts", ".it-test.ts"],
+  "location": "top",
+  "structure": "flat"
+}

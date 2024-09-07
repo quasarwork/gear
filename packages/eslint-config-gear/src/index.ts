@@ -1,6 +1,7 @@
-import * as parserBase from "@typescript-eslint/parser";
-import pluginBase from "@typescript-eslint/eslint-plugin";
 import type { TSESLint } from "@typescript-eslint/utils";
+
+import pluginBase from "@typescript-eslint/eslint-plugin";
+import * as parserBase from "@typescript-eslint/parser";
 
 import clientConfig from "./configs/client.js";
 import extensionsConfig from "./configs/extensions.js";

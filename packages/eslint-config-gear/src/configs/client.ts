@@ -1,4 +1,5 @@
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
+
 // @ts-expect-error eslint-plugin-react is not typed
 import eslintPluginReact from "eslint-plugin-react";
 // @ts-expect-error eslint-plugin-react is not typed
@@ -15,12 +16,12 @@ export default (
 ): FlatConfig.ConfigArray => [
   ...baseConfig(plugin, parser),
   {
-    name: "@quasarwork/eslint-config-gear/client",
     languageOptions: {
       globals: {
         ...globals.browser,
       },
     },
+    name: "@quasarwork/eslint-config-gear/client",
     plugins: {
       eslintPluginReact,
       eslintPluginReactHooks,

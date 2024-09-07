@@ -27,21 +27,29 @@
     "codegen": "build-utils prepare-v2",
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
-    "lint:inspect:config": "eslint --inspect-config .",
-    "tidy": "pnpm types:check && pnpm format:write",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "lint:inspect:config": "eslint --inspect-config ./eslint.config.mjs",
+    "tidy": "pnpm types:check && pnpm lint:fix && pnpm format:write",
     "types:check": "tsc --noEmit --project ./tsconfig.json"
   },
   "prettier": "@quasarwork/gear-prettier-config",
-  "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@quasarwork/gear-prettier-config": "workspace:*",
-    "@quasarwork/gear-tsconfig": "workspace:*",
-    "eslint": ">= 9",
+  "dependencies": {
+    "eslint-plugin-functional": "^7.0.2",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
+    "eslint-plugin-tsdoc": "^0.3.0",
+    "globals": "^15.9.0"
+  },
+  "devDependencies": {
+    "@eslint/config-inspector": "^0.5.4",
+    "@eslint/js": "^9.9.0",
+    "@quasarwork/gear-prettier-config": "workspace:*",
+    "@quasarwork/gear-tsconfig": "workspace:*",
+    "eslint": ">= 9",
+    "eslint-plugin-perfectionist": "^3.5.0",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
     "typescript-eslint": "^8.3.0"
@@ -49,11 +57,6 @@
   "peerDependencies": {
     "@eslint/js": "^9.9.0",
     "eslint": ">= 9",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
     "prettier": "^3.3.3",
     "typescript-eslint": "^8.3.0"
   },

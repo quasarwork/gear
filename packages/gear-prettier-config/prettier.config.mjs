@@ -1,6 +1,7 @@
 /**
- * @see https://prettier.io/docs/en/configuration.html
  * @type {import("prettier").Config}
+ *
+ * @see https://prettier.io/docs/en/configuration.html
  */
 const config = {
   trailingComma: "all",
@@ -9,19 +10,12 @@ const config = {
   singleQuote: false,
   arrowParens: "always",
 
-  plugins: [
-    "prettier-plugin-packagejson",
-    "prettier-plugin-jsdoc",
-    "@trivago/prettier-plugin-sort-imports",
-  ],
+  plugins: ["prettier-plugin-packagejson", "prettier-plugin-jsdoc"],
 
-  /**
-   * @see https://github.com/trivago/prettier-plugin-sort-imports#usage
-   */
-  importOrder: ["^#styles(.*)$", "<THIRD_PARTY_MODULES>", "^#(.*)$", "^[./]"],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
-  importOrderGroupNamespaceSpecifiers: true,
+  jsdocSeparateReturnsFromParam: true,
+  jsdocSeparateTagGroups: true,
+  jsdocPreferCodeFences: true,
+  tsdoc: true,
 };
 
 export default config;

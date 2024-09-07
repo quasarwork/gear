@@ -21,6 +21,10 @@ export const BigIntIdGeneratorDeterministic = () => {
     BigIntIdGenerator.of({
       next: () =>
         Effect.try({
+          catch: () =>
+            new BigIntIdGeneratorError({
+              message: "No more bigint ids available in the in-memory set.",
+            }),
           try: () => {
             const nextId = decodeUnknownSync(BigIntId)(
               inMemoryBigIntIds.values().next().value,
@@ -34,13 +38,13 @@ export const BigIntIdGeneratorDeterministic = () => {
 
             return nextId;
           },
-          catch: () =>
-            new BigIntIdGeneratorError({
-              message: "No more bigint ids available in the in-memory set.",
-            }),
         }),
       nextRange: (range) =>
         Effect.try({
+          catch: () =>
+            new BigIntIdGeneratorError({
+              message: "Not enough bigint ids available in the in-memory set.",
+            }),
           try: () => {
             const nextIds = Array.from(inMemoryBigIntIds.values()).slice(
               0,
@@ -54,13 +58,9 @@ export const BigIntIdGeneratorDeterministic = () => {
 
             return nextIds;
           },
-          catch: () =>
-            new BigIntIdGeneratorError({
-              message: "Not enough bigint ids available in the in-memory set.",
-            }),
         }),
     }),
   );
 
-  return { layer, idsSetNext, idsFlush };
+  return { idsFlush, idsSetNext, layer };
 };

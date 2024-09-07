@@ -1,4 +1,5 @@
 import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
+
 import globals from "globals";
 
 import baseConfig from "./base.js";
@@ -9,12 +10,12 @@ export default (
 ): FlatConfig.ConfigArray => [
   ...baseConfig(plugin, parser),
   {
-    name: "@quasarwork/eslint-config-gear/server",
     languageOptions: {
       globals: {
         ...globals.node,
       },
     },
+    name: "@quasarwork/eslint-config-gear/server",
   },
   {
     ignores: ["**/api/*", "**/web/*"],

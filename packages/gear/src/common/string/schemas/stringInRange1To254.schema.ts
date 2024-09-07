@@ -1,4 +1,4 @@
-import { Schema, brand } from "@effect/schema/Schema";
+import { brand, Schema } from "@effect/schema/Schema";
 
 import { BoundedString } from "./boundedString.schema.js";
 

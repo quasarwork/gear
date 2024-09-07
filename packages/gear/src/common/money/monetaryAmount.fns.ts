@@ -9,15 +9,16 @@ import {
 /**
  * Convert a monetary amount in cents to a monetary amount (number to string)
  *
+ * @example
+ *
+ * ```ts
+ * monetaryAmountToCents("100.00"); // returns "10000"
+ * monetaryAmountToCents("100.50"); // returns "10050"
+ * ```
+ *
  * @param amount
  *
  * @returns A monetary amount (string)
- *
- * @example
- * ```ts
- * monetaryAmountToCents("100.00") // returns "10000"
- * monetaryAmountToCents("100.50") // returns "10050"
- * ```
  */
 export const monetaryAmountToCents = (amount: MonetaryAmount) =>
   Effect.gen(function* () {
@@ -30,15 +31,16 @@ export const monetaryAmountToCents = (amount: MonetaryAmount) =>
 /**
  * Convert a monetary amount in cents to a monetary amount (number to string)
  *
+ * @example
+ *
+ * ```ts
+ * monetaryAmountFromCents("10000"); // returns "100.00"
+ * monetaryAmountFromCents("10050"); // returns "100.50"
+ * ```
+ *
  * @param amount
  *
  * @returns A monetary amount (string)
- *
- * @example
- * ```ts
- * monetaryAmountFromCents("10000") // returns "100.00"
- * monetaryAmountFromCents("10050") // returns "100.50"
- * ```
  */
 export const monetaryAmountFromCents = (amount: MonetaryAmountAsCents) =>
   Effect.gen(function* () {

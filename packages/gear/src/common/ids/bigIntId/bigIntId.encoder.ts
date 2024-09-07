@@ -7,21 +7,23 @@ import { BigIntId } from "./bigIntId.schema.js";
 /**
  * Encodes a string to a BigIntId.
  *
- * Gadget currently only supports BigInt Ids.
- * This makes dealing with third-party APIs much harder when it comes to using their own IDs.
+ * Gadget currently only supports BigInt Ids. This makes dealing with
+ * third-party APIs much harder when it comes to using their own IDs.
  *
- * Hence, we use an ID encoder that turns the remote ID into a BigInt in order to have a deterministic ID
- * that can be accessed more easily.
+ * Hence, we use an ID encoder that turns the remote ID into a BigInt in order
+ * to have a deterministic ID that can be accessed more easily.
  *
- * This is a lossy encoding (one way encoding), as the IDs are limited to 19 digits. This is due to Gadget only supporting
- * a maximum of 19 digits for IDs in their database.
+ * This is a lossy encoding (one way encoding), as the IDs are limited to 19
+ * digits. This is due to Gadget only supporting a maximum of 19 digits for IDs
+ * in their database.
  *
- * In most cases, this is sufficient, however based on the lossy nature of the encoding, we may rarely run into collisions.
+ * In most cases, this is sufficient, however based on the lossy nature of the
+ * encoding, we may rarely run into collisions.
  *
  * @example
  *
  * ```ts
- * const id = yield* toBigIntIdEncode("some-string");
+ * const id = yield * toBigIntIdEncode("some-string");
  * console.log(id); // 12345678901234567890n
  * ```
  */

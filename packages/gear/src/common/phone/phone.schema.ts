@@ -1,10 +1,11 @@
-import { Schema, brand, filter } from "@effect/schema/Schema";
+import { brand, filter, Schema } from "@effect/schema/Schema";
 
-import { StringInRange1To254 } from "../string/index.js";
+import { StringInRange1To254 } from "../string/schemas/stringInRange1To254.schema.js";
 
 /**
- * Implements fast shallow verification of phone numbers.
- * This does not perform a phone number real-time validation but instead check that the structure is valid.
+ * Implements fast shallow verification of phone numbers. This does not perform
+ * a phone number real-time validation but instead check that the structure is
+ * valid.
  *
  * If you need stricter validation, consider using an external library.
  */
@@ -58,8 +59,8 @@ const isValidPhone = (phone: string): boolean => {
 };
 
 export const Phone = StringInRange1To254.annotations({
+  description: "A shallow verification of a phone number",
   identifier: "Phone",
   title: "Phone",
-  description: "A shallow verification of a phone number",
 }).pipe(filter(isValidPhone), brand("Phone"));
 export type Phone = Schema.Type<typeof Phone>;

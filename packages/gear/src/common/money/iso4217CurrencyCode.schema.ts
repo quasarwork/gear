@@ -1,4 +1,4 @@
-import { Literal, Schema, brand } from "@effect/schema/Schema";
+import { brand, Literal, Schema } from "@effect/schema/Schema";
 
 export const ISO4217CurrencyCodes = [
   "EUR",
@@ -255,9 +255,9 @@ export const ISO4217CurrencyCodes = [
 
 export const ISO4217CurrencyCode = Literal(...ISO4217CurrencyCodes)
   .annotations({
+    description: "Currency code according to ISO 4217.",
     identifier: "ISO4217CurrencyCode",
     title: "ISO 4217 currency code",
-    description: "Currency code according to ISO 4217.",
   })
   .pipe(brand("ISO4217CurrencyCode"));
 

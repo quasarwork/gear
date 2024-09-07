@@ -1,9 +1,9 @@
-import { Schema, brand, compose, filter } from "@effect/schema/Schema";
+import { brand, compose, filter, Schema } from "@effect/schema/Schema";
 
-import { StringFromNumberOrString } from "../../string/index.js";
+import { StringFromNumberOrString } from "../../string/schemas/stringFromNumberOrString.schema.js";
 import { Id } from "../id.schema.js";
 
-const isValidBigIntId = (id: string | number): boolean => {
+const isValidBigIntId = (id: number | string): boolean => {
   // Gadget DB only supports big init ids with up to 19 digits
   const MAX_DIGITS = 19;
 
@@ -18,10 +18,10 @@ const isValidBigIntId = (id: string | number): boolean => {
 
 export const BigIntId = compose(StringFromNumberOrString, Id)
   .annotations({
-    identifier: "BigIntId",
-    title: "BigIntId",
     description:
       "A shallow verification matching big integer ids from strings or numbers",
+    identifier: "BigIntId",
+    title: "BigIntId",
   })
   .pipe(filter(isValidBigIntId), brand("BigIntId"));
 export type BigIntId = Schema.Type<typeof BigIntId>;

@@ -1,6 +1,6 @@
-import { Schema, brand, filter } from "@effect/schema/Schema";
+import { brand, filter, Schema } from "@effect/schema/Schema";
 
-import { StringInRange1To2048 } from "../string/index.js";
+import { StringInRange1To2048 } from "../string/schemas/stringInRange1To2048.schema.js";
 
 /**
  * Implements fast shallow verification of hostnames. This does not perform a
@@ -9,6 +9,7 @@ import { StringInRange1To2048 } from "../string/index.js";
  * labels, etc.).
  *
  * If you need stricter validation, consider using an external library.
+ *
  * @see https://github.com/remusao/tldts/blob/master/packages/tldts-core/src/is-valid.ts
  */
 const isValidHostname = (hostname: string): boolean => {
@@ -66,8 +67,8 @@ const isValidHostname = (hostname: string): boolean => {
 };
 
 export const Hostname = StringInRange1To2048.annotations({
+  description: "A valid hostname according to RFC",
   identifier: "Hostname",
   title: "Hostname",
-  description: "A valid hostname according to RFC",
 }).pipe(filter(isValidHostname), brand("Hostname"));
 export type Hostname = Schema.Type<typeof Hostname>;

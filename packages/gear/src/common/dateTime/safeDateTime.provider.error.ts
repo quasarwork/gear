@@ -1,4 +1,4 @@
-import { ErrorBase } from "../errors/index.js";
+import { ErrorBase } from "../errors/errorBase.js";
 
 export class SafeDateTimeProviderError extends ErrorBase(
   "DateTimeProviderError",

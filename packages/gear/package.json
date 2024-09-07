@@ -52,6 +52,7 @@
     "@quasarwork/eslint-config-gear": "workspace:*",
     "@quasarwork/gear-prettier-config": "workspace:*",
     "@quasarwork/gear-tsconfig": "workspace:*",
+    "barrelsby": "^2.8.1",
     "effect": "^3.7.0",
     "pino": "^9.3.2",
     "rimraf": "^6.0.1"

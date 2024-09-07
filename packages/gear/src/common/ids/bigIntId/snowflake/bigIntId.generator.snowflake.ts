@@ -1,7 +1,7 @@
 import { SnowflakeId } from "@akashrajpurohit/snowflake-id";
 import { Effect, Layer } from "effect";
 
-import { errorEnsure } from "../../../errors/index.js";
+import { errorEnsure } from "../../../errors/error.fns.js";
 import { BigIntIdGeneratorError } from "../bigIntId.generator.error.js";
 import { BigIntIdGenerator } from "../bigIntId.generator.js";
 import { BigIntId } from "../bigIntId.schema.js";
@@ -11,6 +11,10 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
   BigIntIdGenerator.of({
     next: () =>
       Effect.try({
+        catch: (unknown) =>
+          BigIntIdGeneratorError.fromUnknown(unknown, {
+            message: "Failed to generate next bigint id.",
+          }),
         try: () => {
           const snowflake = SnowflakeId();
 
@@ -18,13 +22,14 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
 
           return BigIntId.make(nextId);
         },
-        catch: (unknown) =>
-          BigIntIdGeneratorError.fromUnknown(unknown, {
-            message: "Failed to generate next bigint id.",
-          }),
       }),
     nextRange: (range) =>
       Effect.try({
+        catch: (unknown) =>
+          new BigIntIdGeneratorError({
+            cause: errorEnsure(unknown),
+            message: "Failed to generate next range of bigint ids.",
+          }),
         try: () => {
           const snowflake = SnowflakeId();
 
@@ -32,11 +37,6 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
 
           return ids.map((id) => BigIntId.make(id));
         },
-        catch: (unknown) =>
-          new BigIntIdGeneratorError({
-            message: "Failed to generate next range of bigint ids.",
-            cause: errorEnsure(unknown),
-          }),
       }),
   }),
 );

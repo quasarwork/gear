@@ -9,7 +9,6 @@ export const TransliteratorDzcpy = Layer.succeed(
   Transliterator.of({
     slugify: (text) =>
       Effect.try({
-        try: () => trSlugify(text),
         catch: (unknown) =>
           TransliteratorError.fromUnknown(unknown, {
             message: "Slugification failed.",
@@ -17,6 +16,7 @@ export const TransliteratorDzcpy = Layer.succeed(
               input: text,
             },
           }),
+        try: () => trSlugify(text),
       }),
   }),
 );

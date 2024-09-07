@@ -1,36 +1,36 @@
-import { Schema, brand, filter } from "@effect/schema/Schema";
+import { brand, filter, Schema } from "@effect/schema/Schema";
 
-import { StringInRange1To254 } from "../string/index.js";
+import { StringInRange1To254 } from "../string/schemas/stringInRange1To254.schema.js";
 
 // I cannot remember whether this code was taken from a library or AI generated
 // If you know where it comes from, please let me know and I will credit you
 
 interface EmailOptions extends Record<string, unknown> {
   allow_display_name?: boolean;
+  allow_ip_domain?: boolean;
   allow_underscores?: boolean;
-  require_display_name?: boolean;
   allow_utf8_local_part?: boolean;
-  require_tld?: boolean;
   blacklisted_chars?: string;
-  ignore_max_length?: boolean;
+  domain_specific_validation?: boolean;
   host_blacklist?: string[];
   host_whitelist?: string[];
-  domain_specific_validation?: boolean;
-  allow_ip_domain?: boolean;
+  ignore_max_length?: boolean;
+  require_display_name?: boolean;
+  require_tld?: boolean;
 }
 
 const DEFAULT_EMAIL_OPTIONS = {
   allow_display_name: false,
+  allow_ip_domain: false,
   allow_underscores: false,
-  require_display_name: false,
   allow_utf8_local_part: true,
-  require_tld: true,
   blacklisted_chars: "",
-  ignore_max_length: false,
+  domain_specific_validation: false,
   host_blacklist: [],
   host_whitelist: [],
-  domain_specific_validation: false,
-  allow_ip_domain: false,
+  ignore_max_length: false,
+  require_display_name: false,
+  require_tld: true,
 } satisfies EmailOptions;
 
 const SPLIT_NAME_ADDRESS_REGEX = /^([^\x00-\x1F\x7F-\x9F]+)</i;
@@ -62,9 +62,7 @@ const IPV6_ADDRESS_REGEX = new RegExp(
     ")(%[0-9a-zA-Z-.:]{1,})?$",
 );
 
-/**
- * Assert that the input is a string.
- */
+/** Assert that the input is a string. */
 const assertString = (input: unknown): void => {
   const isString = typeof input === "string" || input instanceof String;
 
@@ -83,14 +81,12 @@ const assertString = (input: unknown): void => {
   }
 };
 
-/**
- * Check if a string's length falls within a given range.
- */
+/** Check if a string's length falls within a given range. */
 const isByteLength = (
   str: string,
   options: {
-    min?: number;
     max?: number;
+    min?: number;
   } = {},
 ): boolean => {
   assertString(str);
@@ -102,21 +98,19 @@ const isByteLength = (
   );
 };
 
-/**
- * Validate if a string is a fully qualified domain name (FQDN).
- */
+/** Validate if a string is a fully qualified domain name (FQDN). */
 const isFQDN = (
   str: string,
   options: Record<string, unknown> = {},
 ): boolean => {
   assertString(str);
   options = merge(options, {
-    require_tld: true,
-    allow_underscores: false,
-    allow_trailing_dot: false,
     allow_numeric_tld: false,
+    allow_trailing_dot: false,
+    allow_underscores: false,
     allow_wildcard: false,
     ignore_max_length: false,
+    require_tld: true,
   });
 
   if (options["allow_trailing_dot"] && str.endsWith(".")) {
@@ -178,10 +172,8 @@ const isFQDN = (
   });
 };
 
-/**
- * Check if a string is a valid IP (version 4 or 6).
- */
-const isIP = (str: string, version: string | number = ""): boolean => {
+/** Check if a string is a valid IP (version 4 or 6). */
+const isIP = (str: string, version: number | string = ""): boolean => {
   assertString(str);
   version = String(version);
   if (!version) {
@@ -197,7 +189,8 @@ const isIP = (str: string, version: string | number = ""): boolean => {
 };
 
 /**
- * Merge two objects, with properties from the second object overriding those from the first.
+ * Merge two objects, with properties from the second object overriding those
+ * from the first.
  */
 const merge = <T extends Record<string, unknown>>(obj: T, defaults: T): T => {
   for (const key in defaults) {
@@ -208,9 +201,7 @@ const merge = <T extends Record<string, unknown>>(obj: T, defaults: T): T => {
   return obj;
 };
 
-/**
- * Validate display name according to the RFC2822.
- */
+/** Validate display name according to the RFC2822. */
 const validateDisplayName = (display_name: string): boolean => {
   const display_name_without_quotes = display_name.replace(/^"(.+)"$/, "$1");
   if (!display_name_without_quotes.trim()) {
@@ -235,8 +226,9 @@ const validateDisplayName = (display_name: string): boolean => {
 };
 
 /**
- * Implements fast shallow verification of email addresses.
- * This does not perform an email address real-time validation but instead check that the structure is valid.
+ * Implements fast shallow verification of email addresses. This does not
+ * perform an email address real-time validation but instead check that the
+ * structure is valid.
  *
  * If you need stricter validation, consider using an external library.
  */
@@ -300,7 +292,7 @@ const isValidEmail = (
       return false;
     }
 
-    if (!isByteLength(username.replace(/\./g, ""), { min: 6, max: 30 })) {
+    if (!isByteLength(username.replace(/\./g, ""), { max: 30, min: 6 })) {
       return false;
     }
     const user_parts = username.split(".");
@@ -318,9 +310,9 @@ const isValidEmail = (
 
   if (
     !isFQDN(domain, {
-      require_tld: options.require_tld,
-      ignore_max_length: options.ignore_max_length,
       allow_underscores: options.allow_underscores,
+      ignore_max_length: options.ignore_max_length,
+      require_tld: options.require_tld,
     })
   ) {
     if (!options.allow_ip_domain) {
@@ -370,9 +362,9 @@ const isValidEmail = (
 };
 
 export const Email = StringInRange1To254.annotations({
+  description: "A shallow verification of an email address",
   identifier: "Email",
   title: "Email",
-  description: "A shallow verification of an email address",
 }).pipe(
   filter((value) => isValidEmail(value, DEFAULT_EMAIL_OPTIONS)),
   brand("Email"),

@@ -30,16 +30,16 @@ export const errorEnsure = (unknown: unknown) => {
 
   if (!error.name) {
     Object.defineProperty(error, "name", {
-      value: error.constructor.name || DEFAULT_ERROR_NAME,
       configurable: true,
+      value: error.constructor.name || DEFAULT_ERROR_NAME,
       writable: true,
     });
   }
 
   if (!error.message) {
     Object.defineProperty(error, "message", {
-      value: DEFAULT_ERROR_MESSAGE,
       configurable: true,
+      value: DEFAULT_ERROR_MESSAGE,
       writable: true,
     });
   }
@@ -48,10 +48,10 @@ export const errorEnsure = (unknown: unknown) => {
     const newError = new Error(error.message);
 
     Object.defineProperty(error, "stack", {
+      configurable: true,
       value: newError.stack
         ? newError.stack.replace(/\n {4}at /, DEFAULT_ERROR_STACK)
         : DEFAULT_ERROR_STACK,
-      configurable: true,
       writable: true,
     });
   }

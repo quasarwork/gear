@@ -21,6 +21,10 @@ export const TransliteratorDeterministic = () => {
     Transliterator.of({
       slugify: (text) =>
         Effect.try({
+          catch: () =>
+            new TransliteratorError({
+              message: "No more slugifications available in the in-memory set.",
+            }),
           try: () => {
             const slugification = inMemorySlugifications.get(text);
 
@@ -32,13 +36,9 @@ export const TransliteratorDeterministic = () => {
 
             return slugification;
           },
-          catch: () =>
-            new TransliteratorError({
-              message: "No more slugifications available in the in-memory set.",
-            }),
         }),
     }),
   );
 
-  return { layer, inMemorySlugificationsFeedWith, inMemorySlugificationsFlush };
+  return { inMemorySlugificationsFeedWith, inMemorySlugificationsFlush, layer };
 };

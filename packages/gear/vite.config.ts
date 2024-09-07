@@ -1,4 +1,4 @@
-import { type UserConfigExport, mergeConfig } from "vitest/config";
+import { mergeConfig, type UserConfigExport } from "vitest/config";
 
 import { viteConfigBase } from "./vite.config.base.js";
 

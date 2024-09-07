@@ -20,19 +20,19 @@ describe("uuid schema", () => {
   };
 
   const UUID_INVALID = {
-    "is too short": "123e4567-e89b-12d3-a456-42661417400",
-    "is too long": "123e4567-e89b-12d3-a456-4266141740000",
-    "has missing hyphens": "123e4567e89b12d3a45642661417400",
     "has invalid characters": "123e4567-e89b-12d3-a456-42661417400g",
-    "has invalid version": "123e4567-e89b-62d3-a456-426614174000",
     "has invalid variant": "123e4567-e89b-42d3-c456-426614174000",
+    "has invalid version": "123e4567-e89b-62d3-a456-426614174000",
     "has malformed sections": {
       "first section is too short": "123e45-67e89b-42d3-a456-426614174000",
+      "fourth section is too short": "123e4567-e89b-42d3-a45-426614174000",
       "second section is too short": "123e4567-e89-42d3-a456-426614174000",
       "third section is too short": "123e4567-e89b-42d-a456-426614174000",
-      "fourth section is too short": "123e4567-e89b-42d3-a45-426614174000",
     },
+    "has missing hyphens": "123e4567e89b12d3a45642661417400",
     "is not hexadecimal": "gggggggg-gggg-gggg-gggg-gggggggggggg",
+    "is too long": "123e4567-e89b-12d3-a456-4266141740000",
+    "is too short": "123e4567-e89b-12d3-a456-42661417400",
   };
 
   describe("valid uuids", () => {
