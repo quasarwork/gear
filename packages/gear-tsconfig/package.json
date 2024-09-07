@@ -1,6 +1,6 @@
 {
   "name": "@quasarwork/gear-tsconfig",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "Opinionated TypeScript configuration for Quasar.work's Gear projects",
   "keywords": [
     "typescript",
