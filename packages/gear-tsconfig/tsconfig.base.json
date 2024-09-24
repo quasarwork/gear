@@ -4,7 +4,7 @@
   "compilerOptions": {
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "target": "ES2022",
+    "target": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "isolatedModules": true,
@@ -43,10 +43,11 @@
     "removeComments": false
   },
   "exclude": [
-    "${configDir}/node_modules/*",
-    "${configDir}/dist/*",
-    "${configDir}/build/*",
-    "*.gadget"
+    "${configDir}/node_modules/**",
+    "${configDir}/dist/**",
+    "${configDir}/build/**",
+    "${configDir}/*.gadget",
+    "${configDir}/.gadget"
   ],
   "include": [
     "${configDir}/**/*.ts",

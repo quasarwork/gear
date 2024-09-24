@@ -2,7 +2,7 @@ import type { FlatConfig } from "@typescript-eslint/utils/ts-eslint";
 
 import eslintPluginPerfectionist from "eslint-plugin-perfectionist";
 import eslintPluginPrettier from "eslint-plugin-prettier";
-import eslintPluginTsDoc from "eslint-plugin-tsdoc";
+// import eslintPluginTsDoc from "eslint-plugin-tsdoc";
 import tseslint from "typescript-eslint";
 
 export default (
@@ -25,7 +25,7 @@ export default (
     plugins: {
       "@typescript-eslint": plugin,
       eslintPluginPrettier,
-      eslintPluginTsDoc,
+      // eslintPluginTsDoc,
     },
     rules: {
       // disabled because effect-ts needs to be able to extend schema interfaces

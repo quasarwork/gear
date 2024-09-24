@@ -22,16 +22,13 @@
       "url": "https://github.com/aurelienbobenrieth"
     }
   ],
-  "files": [
-    "LICENSE",
-    "README.md",
-    "package.json",
-    "tsconfig.base.json",
-    "tsconfig.build.base.json",
-    "tsconfig.client.json",
-    "tsconfig.server.json",
-    "tsconfig.extensions.json"
-  ],
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./tsconfig.build.base.json": "./tsconfig.build.base.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
+    "./tsconfig.server.json": "./tsconfig.server.json",
+    "./tsconfig.extensions.json": "./tsconfig.extensions.json"
+  },
   "scripts": {
     "attw:pack": "attw --pack .",
     "format:check": "prettier --check .",

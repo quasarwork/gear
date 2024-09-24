@@ -1,5 +1,7 @@
-import { ErrorBase } from "../errors/errorBase.js";
+import { Data } from "effect";
 
-export class SafeDateTimeProviderError extends ErrorBase(
-  "DateTimeProviderError",
-) {}
+import type { ErrorBaseProps } from "../errors/errorBase.js";
+
+export class SafeDateTimeProviderError extends Data.TaggedError(
+  "SafeDateTimeProviderError",
+)<ErrorBaseProps> {}

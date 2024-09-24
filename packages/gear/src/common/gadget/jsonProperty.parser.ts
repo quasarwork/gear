@@ -78,3 +78,26 @@ export const jsonPropertyToObjectOrNullUnsafe = (
 
   return {};
 };
+
+/**
+ * Gadget expects a valid JSON object (or primitive) as a property value.
+ * However, its current client screams at you when you pass some pre-defined
+ * schema or branded type.
+ *
+ * This utility function aims to provide a quick way to convert a value to a
+ * valid JSON object.
+ *
+ * The output is definitely not type and should only be used at the boundary of
+ * your API, when saving your model to the database.
+ */
+export const toObjectOrNullUnsafe = (value: unknown) => {
+  if (value === null) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(String(value)) as JsonArray | JsonObject;
+  } catch {
+    return JSON.parse(JSON.stringify(value)) as JsonArray | JsonObject;
+  }
+};

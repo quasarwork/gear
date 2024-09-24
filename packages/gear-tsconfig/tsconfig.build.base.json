@@ -11,10 +11,11 @@
     "declaration": true
   },
   "exclude": [
-    "${configDir}/node_modules/*",
-    "${configDir}/dist/*",
-    "${configDir}/build/*",
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
     "*.gadget",
+    ".gadget",
     "${configDir}/**/*.mjs",
     "${configDir}/**/*.test.ts",
     "${configDir}/**/*.it-test.ts",
