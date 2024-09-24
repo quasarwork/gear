@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.10.1
+
+### Patch Changes
+
+- [#71](https://github.com/quasarwork/gear/pull/71) [`bae0957`](https://github.com/quasarwork/gear/commit/bae09578de28660dc126f648e68b9d2d534529b6) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed data tagged error + added banking fixtures + some ts fixes
+
 ## 0.10.0
 
 ### Minor Changes
