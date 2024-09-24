@@ -20,9 +20,6 @@ jobs:
       - name: CI Setup
         uses: ./.github/actions/ci-setup
 
-      - name: Build
-        run: pnpm build
-
       - name: Create release pull request or publish to npm
         uses: changesets/action@v1
         with:

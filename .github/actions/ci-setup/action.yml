@@ -23,3 +23,6 @@ runs:
     - name: Install dependencies
       shell: bash
       run: pnpm install --no-frozen-lockfile
+
+    - name: Build
+      run: pnpm build
