@@ -6,14 +6,31 @@ import { SafeDateTimeProvider } from "../safeDateTime.provider.js";
 import { SafeDateTime } from "../safeDateTime.schema.js";
 
 export const SafeDateTimeProviderDeterministic = () => {
-  let inMemoryDateOfNow: SafeDateTime;
+  let inMemoryDateOfNow: null | SafeDateTime = null;
+  const dateOfNowSet = (date: SafeDateTime) => {
+    inMemoryDateOfNow = date;
+  };
+  const dateOfNowFlush = () => {
+    inMemoryDateOfNow = null;
+  };
 
-  let inMemoryDateOfTomorrow: SafeDateTime;
-  let inMemoryDateOfYesterday: SafeDateTime;
+  let inMemoryDateOfYesterday: null | SafeDateTime = null;
+  const dateOfYesterdaySet = (date: SafeDateTime) => {
+    inMemoryDateOfYesterday = date;
+  };
+  const dateOfYesterdayFlush = () => {
+    inMemoryDateOfYesterday = null;
+  };
+
+  let inMemoryDateOfTomorrow: null | SafeDateTime = null;
+  const dateOfTomorrowSet = (date: SafeDateTime) => {
+    inMemoryDateOfTomorrow = date;
+  };
+  const dateOfTomorrowFlush = () => {
+    inMemoryDateOfTomorrow = null;
+  };
 
   const inMemoryDatesDaysFromNow = new Map<number, SafeDateTime>();
-  const inMemoryDatesDaysAgo = new Map<number, SafeDateTime>();
-
   const datesDaysFromNowSetNext = (days: number, date: SafeDateTime) => {
     inMemoryDatesDaysFromNow.set(days, date);
   };
@@ -21,6 +38,7 @@ export const SafeDateTimeProviderDeterministic = () => {
     inMemoryDatesDaysFromNow.clear();
   };
 
+  const inMemoryDatesDaysAgo = new Map<number, SafeDateTime>();
   const datesDaysAgoSetNext = (days: number, date: SafeDateTime) => {
     inMemoryDatesDaysAgo.set(days, date);
   };
@@ -76,7 +94,15 @@ export const SafeDateTimeProviderDeterministic = () => {
               cause: errorEnsure(unknown),
               message: "Date of now providing failed.",
             }),
-          try: () => inMemoryDateOfNow,
+          try: () => {
+            if (!inMemoryDateOfNow) {
+              throw new Error(
+                `Date of now has not been defined in the in-memory map.`,
+              );
+            }
+
+            return inMemoryDateOfNow;
+          },
         }),
       tomorrow: () =>
         Effect.try({
@@ -85,7 +111,15 @@ export const SafeDateTimeProviderDeterministic = () => {
               cause: errorEnsure(unknown),
               message: "Date of tomorrow providing failed.",
             }),
-          try: () => inMemoryDateOfTomorrow,
+          try: () => {
+            if (!inMemoryDateOfTomorrow) {
+              throw new Error(
+                `Date of tomorrow has not been defined in the in-memory map.`,
+              );
+            }
+
+            return inMemoryDateOfTomorrow;
+          },
         }),
       yesterday: () =>
         Effect.try({
@@ -94,12 +128,26 @@ export const SafeDateTimeProviderDeterministic = () => {
               cause: errorEnsure(unknown),
               message: "Date of yesterday providing failed.",
             }),
-          try: () => inMemoryDateOfYesterday,
+          try: () => {
+            if (!inMemoryDateOfYesterday) {
+              throw new Error(
+                `Date of yesterday has not been defined in the in-memory map.`,
+              );
+            }
+
+            return inMemoryDateOfYesterday;
+          },
         }),
     }),
   );
 
   return {
+    dateOfNowFlush,
+    dateOfNowSet,
+    dateOfTomorrowFlush,
+    dateOfTomorrowSet,
+    dateOfYesterdayFlush,
+    dateOfYesterdaySet,
     datesDaysAgoFlush,
     datesDaysAgoSetNext,
     datesDaysFromNowFlush,
