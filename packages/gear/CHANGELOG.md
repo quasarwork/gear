@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.10.2
+
+### Patch Changes
+
+- [`006abfe`](https://github.com/quasarwork/gear/commit/006abfe3ac9e7f083e775547d237000296351459) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed safe date time provider deterministic
+
 ## 0.10.1
 
 ### Patch Changes
