@@ -8,13 +8,20 @@
     "moduleResolution": "NodeNext",
     "jsx": "react-jsx",
     "lib": ["es2015", "dom"],
-    "types": ["@shopify/app-bridge-types", "vite/client"]
+    "types": ["@shopify/app-bridge-types", "vite/client"],
+    "paths": {
+      "gadget-client": ["${configDir}/../.gadget/client/*"],
+      "#extensions/admin/*": ["${configDir}/admin/*"],
+      "#extensions/common/*": ["${configDir}/common/*"],
+      "#extensions/configs/*": ["${configDir}/configs/*"]
+    }
   },
   "exclude": [
-    "${configDir}/node_modules/*",
-    "${configDir}/dist/*",
-    "${configDir}/build/*",
+    "**/node_modules/*",
+    "**/dist/*",
+    "**/build/*",
     "*.gadget",
+    ".gadget",
     "${configDir}/../api/*",
     "${configDir}/../web/*"
   ]

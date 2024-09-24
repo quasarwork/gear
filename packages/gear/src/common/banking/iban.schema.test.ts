@@ -3,29 +3,27 @@ import { decode } from "@effect/schema/Schema";
 import { describe, expect, it } from "@effect/vitest";
 import { Effect } from "effect";
 
+import { IBAN_VALID_DEFAULT } from "./__testing__/fixtures.js";
 import { IBAN } from "./iban.schema.js";
 
 describe("IBAN schema", () => {
   it.effect("should accept valid IBANs", () =>
     Effect.gen(function* () {
-      const someIBAN = "FR76300010079412345678901";
+      const result = yield* decode(IBAN)(IBAN_VALID_DEFAULT);
 
-      const result = yield* decode(IBAN)(someIBAN);
-
-      expect(result).toBe(someIBAN);
+      expect(result).toBe(IBAN_VALID_DEFAULT);
     }),
   );
 
-  it.effect("should reject invalid IBANs", () =>
-    Effect.gen(function* () {
-      const tooShortIBAN = "FR763000";
-      const tooLongIBAN = "FR763000100794123456789012345678925645645";
+  describe("should reject invalid IBANs", () => {
+    it.effect("should reject IBAN when length is not valid", () =>
+      Effect.gen(function* () {
+        const result = yield* Effect.flip(
+          decode(IBAN)(IBAN_VALID_DEFAULT + "12345678901234567890"),
+        );
 
-      const tooShortIBANResult = yield* Effect.flip(decode(IBAN)(tooShortIBAN));
-      const tooLongIBANResult = yield* Effect.flip(decode(IBAN)(tooLongIBAN));
-
-      expect(tooShortIBANResult).toBeInstanceOf(ParseError);
-      expect(tooLongIBANResult).toBeInstanceOf(ParseError);
-    }),
-  );
+        expect(result).toBeInstanceOf(ParseError);
+      }),
+    );
+  });
 });

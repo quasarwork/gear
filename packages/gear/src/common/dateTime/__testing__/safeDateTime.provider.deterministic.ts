@@ -72,7 +72,8 @@ export const SafeDateTimeProviderDeterministic = () => {
       now: () =>
         Effect.try({
           catch: (unknown) =>
-            SafeDateTimeProviderError.fromUnknown(unknown, {
+            new SafeDateTimeProviderError({
+              cause: errorEnsure(unknown),
               message: "Date of now providing failed.",
             }),
           try: () => inMemoryDateOfNow,

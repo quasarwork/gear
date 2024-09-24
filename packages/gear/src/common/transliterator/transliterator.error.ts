@@ -1,3 +1,7 @@
-import { ErrorBase } from "../errors/errorBase.js";
+import { Data } from "effect";
 
-export class TransliteratorError extends ErrorBase("TRANSLITERATOR_ERROR") {}
+import type { ErrorBaseProps } from "../errors/errorBase.js";
+
+export class TransliteratorError extends Data.TaggedError(
+  "TRANSLITERATOR_ERROR",
+)<ErrorBaseProps> {}

@@ -1,6 +1,7 @@
 import { Effect, Layer } from "effect";
 import { slugify as trSlugify } from "transliteration";
 
+import { errorEnsure } from "../../errors/error.fns.js";
 import { TransliteratorError } from "../transliterator.error.js";
 import { Transliterator } from "../transliterator.js";
 
@@ -10,7 +11,8 @@ export const TransliteratorDzcpy = Layer.succeed(
     slugify: (text) =>
       Effect.try({
         catch: (unknown) =>
-          TransliteratorError.fromUnknown(unknown, {
+          new TransliteratorError({
+            cause: errorEnsure(unknown),
             message: "Slugification failed.",
             metadata: {
               input: text,

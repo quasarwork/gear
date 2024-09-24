@@ -4,17 +4,22 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
     "jsx": "react-jsx",
     "lib": ["es2020", "dom"],
-    "types": ["@shopify/app-bridge-types", "vite/client"]
+    "types": ["@shopify/app-bridge-types", "vite/client", "node"],
+    "paths": {
+      "#client/*": ["${configDir}/*"],
+      "gadget-client": ["${configDir}/../.gadget/client/*"]
+    }
   },
   "exclude": [
     "**/node_modules/*",
     "**/dist/*",
     "**/build/*",
     "*.gadget",
+    ".gadget",
     "${configDir}/../api/*",
     "${configDir}/../extensions/*"
   ]

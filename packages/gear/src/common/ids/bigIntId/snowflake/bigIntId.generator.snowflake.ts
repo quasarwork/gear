@@ -12,7 +12,8 @@ export const BigIntIdGeneratorSnowflake = Layer.succeed(
     next: () =>
       Effect.try({
         catch: (unknown) =>
-          BigIntIdGeneratorError.fromUnknown(unknown, {
+          new BigIntIdGeneratorError({
+            cause: errorEnsure(unknown),
             message: "Failed to generate next bigint id.",
           }),
         try: () => {

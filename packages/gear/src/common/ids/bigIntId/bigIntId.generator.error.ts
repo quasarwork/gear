@@ -1,5 +1,7 @@
-import { ErrorBase } from "../../errors/errorBase.js";
+import { Data } from "effect";
 
-export class BigIntIdGeneratorError extends ErrorBase(
-  "BIG_INT_ID_GENERATOR_ERROR",
-) {}
+import type { ErrorBaseProps } from "../../errors/errorBase.js";
+
+export class BigIntIdGeneratorError extends Data.TaggedError(
+  "BigIntIdGeneratorError",
+)<ErrorBaseProps> {}

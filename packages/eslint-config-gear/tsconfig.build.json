@@ -4,8 +4,9 @@
     "rootDir": "./src"
   },
   "exclude": [
-    "**/dist/*",
-    "**/build/*",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
     "eslint.config.mjs",
     "babel.config-annotate.mjs",
     "babel.config-cjs.mjs"
