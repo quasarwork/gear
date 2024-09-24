@@ -25,4 +25,5 @@ runs:
       run: pnpm install --no-frozen-lockfile
 
     - name: Build
+      shell: bash
       run: pnpm build
