@@ -39,12 +39,12 @@
   "devDependencies": {
     "@quasarwork/gear-prettier-config": "workspace:*",
     "@shopify/app-bridge-types": "^0.0.14",
-    "@types/node": "^22.5.3",
+    "@types/node": "^22.7.1",
     "typescript": ">=5.0.0"
   },
   "peerDependencies": {
     "@shopify/app-bridge-types": "^0.0.14",
-    "@types/node": "^22.5.3",
+    "@types/node": "^22.7.1",
     "typescript": ">=5.0.0"
   },
   "publishConfig": {
