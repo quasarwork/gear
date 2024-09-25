@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.10.3
+
+### Patch Changes
+
+- [`fbe43b5`](https://github.com/quasarwork/gear/commit/fbe43b54a814e217c4a8a9dbb6ce2c28a65a206c) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed big int id encoder
+
 ## 0.10.2
 
 ### Patch Changes
