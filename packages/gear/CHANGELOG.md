@@ -1,5 +1,11 @@
 # @quasarwork/gear
 
+## 0.10.4
+
+### Patch Changes
+
+- [`e0b3ef0`](https://github.com/quasarwork/gear/commit/e0b3ef006e4aaa2eff298bf98806028dbd7b028b) Thanks [@aurelienbobenrieth](https://github.com/aurelienbobenrieth)! - fixed big int id encoder so it can be used in browser as well
+
 ## 0.10.3
 
 ### Patch Changes
