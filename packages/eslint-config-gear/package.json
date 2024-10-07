@@ -36,9 +36,9 @@
   "prettier": "@quasarwork/gear-prettier-config",
   "dependencies": {
     "eslint-plugin-functional": "^7.0.2",
-    "eslint-plugin-perfectionist": "^3.5.0",
+    "eslint-plugin-perfectionist": "^3.8.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.9",
     "eslint-plugin-tsdoc": "^0.3.0",
