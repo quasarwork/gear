@@ -55,7 +55,7 @@
     "@quasarwork/gear-tsconfig": "workspace:*",
     "@shopify/polaris": "^13.9.0",
     "@shopify/polaris-icons": "^9.3.0",
-    "@types/react": "^18.3.8",
+    "@types/react": "^18.3.11",
     "effect": "^3.7.0",
     "pino": "^9.3.2",
     "rimraf": "^6.0.1"
