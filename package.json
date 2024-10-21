@@ -50,7 +50,7 @@
     "@effect/build-utils": "^0.7.8",
     "@quasarwork/gear-prettier-config": "workspace:*",
     "@quasarwork/gear-tsconfig": "workspace:*",
-    "@types/node": "^22.5.4",
+    "@types/node": "^22.7.7",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "commitlint-config-gitmoji": "^2.3.1",
     "husky": "^9.1.5",
@@ -58,7 +58,7 @@
     "pinst": "^3.0.0",
     "prettier": "^3.3.3",
     "turbo": "^2.1.1",
-    "typescript": "^5.5.4",
+    "typescript": "^5.6.3",
     "vite": "^5.4.3",
     "vitest": "^2.0.5"
   },
