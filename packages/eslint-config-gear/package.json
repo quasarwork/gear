@@ -45,20 +45,20 @@
     "globals": "^15.9.0"
   },
   "devDependencies": {
-    "@eslint/config-inspector": "^0.5.4",
-    "@eslint/js": "^9.9.0",
+    "@eslint/config-inspector": "^0.5.5",
+    "@eslint/js": "^9.13.0",
     "@quasarwork/gear-prettier-config": "workspace:*",
     "@quasarwork/gear-tsconfig": "workspace:*",
     "eslint": ">= 9",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
-    "typescript-eslint": "^8.3.0"
+    "typescript-eslint": "^8.10.0"
   },
   "peerDependencies": {
-    "@eslint/js": "^9.9.0",
+    "@eslint/js": "^9.13.0",
     "eslint": ">= 9",
     "prettier": "^3.3.3",
-    "typescript-eslint": "^8.3.0"
+    "typescript-eslint": "^8.10.0"
   },
   "publishConfig": {
     "access": "public",
